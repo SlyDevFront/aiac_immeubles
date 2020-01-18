@@ -1,0 +1,103 @@
+body {
+    font-family: $main_font;
+}
+
+.entete {
+    background-color: $second_light_grey;
+    height: 45px;
+    line-height: 45px;
+    .baseline {
+        color: #545454;
+        letter-spacing: 1px;
+        font-size: 0.825em;
+    }
+    .link {
+        color: #00457c;
+        letter-spacing: 2px;
+        color: #00457c;
+        a {
+            color: #00457c;
+            &::after {
+                font-family: "FontAwesome";
+                content: $fa-var-arrow-circle-right;
+                margin-left: 1%;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.header {
+    // height: 115px;
+    background-color: #3e444e;
+    .visible {
+        visibility: visible !important;
+    }
+    .hidden {
+        visibility: hidden !important;
+    }
+    #searchform {
+        input {
+            border: none;
+            background: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            border-radius: 0;
+            color: #ffffff;
+            visibility: hidden;
+            outline: none !important;
+            transition: 0.3s;
+            &:focus {
+                // outline: none !important;
+            }
+        }
+    }
+    .input-group-append {
+        margin-left: -5px !important;
+    }
+    #searchsubmit {
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+        border: 1px solid #ffffff;
+        width: 3em;
+        height: 3em;
+        transition: 0.3s;
+        i {
+            color: #5c5c5c;
+        }
+        &:hover {
+            background: rgb(62, 68, 78);
+            border: 1px solid #ffffff;
+            z-index: 999999;
+            i {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.header-page {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    .header-overlay {
+        background: rgba($color: #404040, $alpha: 0.6);
+        h1 {
+            font-size: 3.4375em;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 60px;
+            margin: 0;
+            padding: 8% 0;
+            @media screen and (max-width: 768px) {
+                font-size: 1.8em !important;
+                padding: 10% 0 !important;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 1.8em !important;
+                padding: 20% 0 !important;
+            }
+        }
+    }
+}
