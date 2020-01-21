@@ -47,6 +47,17 @@
             }
         }
     }
+    #follow_hr {
+        span {
+            &::after {
+                content: url(../img/aiac-slider-trait.png);
+                position: absolute;
+                transform: rotate(90deg);
+                right: 28px;
+                top: -4px;
+            }
+        }
+    }
     .carousel-indicators {
         li {
             width: 0.5em;
@@ -60,7 +71,7 @@
         transform: rotate(270deg);
         z-index: 10;
         bottom: 20%;
-        left: 1%;
+        left: 0;
         span {
             font-family: $main_font;
             font-size: 0.78125em;
@@ -73,6 +84,8 @@
         }
         i {
             color: #ffffff !important;
+            position: absolute;
+            top: 6px;
         }
     }
     @media screen and (max-width: 768px) {

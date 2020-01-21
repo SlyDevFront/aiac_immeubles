@@ -24,7 +24,7 @@ $container = get_theme_mod('understrap_container_type');
 					<div class="row ">
 						<div class="col-12 order-3 order-md-1 col-md-3 my-auto">
 							<p class="copyright">
-								© AIAC Immeubles par AIAC Courtage
+								© aiac Immeubles par AIAC Courtage
 							</p>
 						</div>
 						<div class="col-6 order-1 order-md-2 col-md-6 my-auto text-md-center">

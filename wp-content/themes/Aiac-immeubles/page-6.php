@@ -30,7 +30,7 @@ include 'inc/slider.php'; ?>
 			</div>
 			<div class="col-12 col-md-6 col-lg-3 text-center text-md-left" id="syndic">
 				<a href="<?php the_field('lien_syndic_benevoles'); ?>"><img src="<?php get_template_directory(); ?>wp-content/themes/Aiac-immeubles/img/aiac-home-syndic.svg" alt="aiac immeubles syndic bénévoles">
-					<h4>SYNDIC BENEVOLES</h4>
+					<h4>COPROPRIÉTAIRES</h4>
 				</a>
 			</div>
 			<div class="col-12 col-md-12 col-lg-3 text-center text-lh-left my-auto" id="contact">
@@ -134,7 +134,7 @@ include 'inc/slider.php'; ?>
 <section class="qui_sommes_nous container-fluid">
 	<div class="mx-15">
 		<div class="row">
-			<div class="col-12 col-md-6 text-center" id="pic" data-aos="fade-right" data-aos-duration="1500">
+			<div class="col-12 col-md-6" id="pic" data-aos="fade-right" data-aos-duration="1500">
 				<?php $pic = get_field('visuel_');
 				//var_dump($pic);
 				?>

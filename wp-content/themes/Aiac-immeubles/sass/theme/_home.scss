@@ -93,7 +93,7 @@
             letter-spacing: 5px;
             border: none;
             background-color: #3a4853;
-            padding: 3% 5%;
+            padding: 3% 10px;
             border-radius: 30px;
             // margin-top: 20%;
             transition: 0.3s;
@@ -227,13 +227,13 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #3d4c57;
-            margin: 25px 0 30px 0;
+            margin: 15px 0 20px 0;
         }
         hr {
             width: 6%;
             float: left;
             border-top: 5px solid rgb(61, 76, 87);
-            // margin: 0;
+            margin: 0;
         }
     }
     .big_pres {
@@ -432,7 +432,7 @@
     background-color: $primary_light_grey;
     #pic {
         img {
-            width: 80%;
+            width: 90%;
             border: 40px solid $second_light_grey;
         }
     }
@@ -463,7 +463,7 @@
             font-size: 1.0625em;
             font-weight: 200;
             color: #3d4c57;
-            margin: 5% 0;
+            margin: 8% 0;
             width: 100%;
         }
         button {
@@ -533,8 +533,8 @@
         color: #3d4c57;
         font-size: 1.3125em;
         float: right;
-        width: 50%;
-        margin-bottom: 5%;
+        width: 60%;
+        margin-bottom: 8%;
     }
     h6 {
         font-family: $main_font;
@@ -665,7 +665,7 @@
         }
         .title_actu {
             font-family: $main_font;
-            font-weight: 400;
+            font-weight: bold;
             font-size: 1.0625em;
             color: #000000;
             line-height: 26px;
@@ -673,6 +673,7 @@
         }
         &:hover {
             transition: 0.3s;
+            filter: brightness(1.05);
             img {
                 filter: brightness(0.65);
             }

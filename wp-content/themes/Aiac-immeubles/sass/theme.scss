@@ -36,6 +36,11 @@
     background-repeat: no-repeat;
 }
 
+button {
+    font-weight: 300 !important;
+    letter-spacing: 3px !important;
+}
+
 section {
     position: relative;
     overflow-x: hidden !important;
@@ -69,9 +74,14 @@ section {
         border-radius: 50%;
         margin-top: 5%;
     }
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1440px) {
         height: 200px;
         width: 200px;
+        margin-bottom: 10%;
+    }
+    @media screen and (min-width: 1441px) and (max-width: 1680px) {
+        height: 250px;
+        width: 250px;
         margin-bottom: 10%;
     }
 }

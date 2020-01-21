@@ -11,8 +11,9 @@
 		<?php $i++; // Increment the increment variable
 
 		endwhile; //End the loop
-
+		echo '<span id="index">' . $i . '</span>';
 		echo 	'</ol>
+
 		  <div class="carousel-inner">';
 		$i = 0; // Set the increment variable
 		while (have_rows('slider')) : the_row();
@@ -41,8 +42,8 @@
 		</div>';
 	endif;
 	?>
-	<div class="follow d-none d-lg-block">
-		<a href="http://" target="_blank"><span>Nous suivre &#8212;&#8212;&#8212; </span>
+	<div class="follow d-none d-lg-block" id="follow_hr">
+		<a href="http://" target="_blank"><span>Nous suivre &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 			<!-- <div class="trait"></div>--><i class="fab fa-linkedin-in fa-rotate-90"></i>
 		</a>
 	</div>
