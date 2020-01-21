@@ -394,6 +394,12 @@
                 padding: 3% 10% !important;
             }
         }
+        #pic {
+            img {
+                border: 20px solid $second_light_grey !important;
+                width: initial !important;
+            }
+        }
     }
     @media screen and (max-width: 767px) {
         #pic {
