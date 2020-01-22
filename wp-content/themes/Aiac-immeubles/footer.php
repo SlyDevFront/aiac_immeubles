@@ -28,7 +28,7 @@ $container = get_theme_mod('understrap_container_type');
 							</p>
 						</div>
 						<div class="col-6 order-1 order-md-2 col-md-6 my-auto text-md-center">
-							<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-logo-footer.png" alt="">
+							<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-logo-footer.svg" alt="">
 						</div>
 						<div class="col-6 order-2 order-md-3 col-md-3 my-auto text-right icons">
 							<ul class="icon">

@@ -23,12 +23,12 @@ include 'inc/slider.php'; ?>
 			<div class="col-12 col-md-3 text-center d-block d-sm-none my-auto d-lg-block text-md-right" id="titre">
 				<p>Vous êtes</p>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 text-center text-md-right" id="admin">
+			<div class="col-12 col-md-6 col-lg-3 text-center my-auto text-md-right" id="admin">
 				<a href="<?php the_field('lien_administrateur_de_biens'); ?>"><img src="<?php get_template_directory(); ?>wp-content/themes/Aiac-immeubles/img/aiac-home-admin.svg" alt="aiac immeubles syndic bénévoles">
 					<h4>ADMINISTRATEUR DE BIENS</h4>
 				</a>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 text-center text-md-left" id="syndic">
+			<div class="col-12 col-md-6 col-lg-3 text-center my-auto text-md-left" id="syndic">
 				<a href="<?php the_field('lien_syndic_benevoles'); ?>"><img src="<?php get_template_directory(); ?>wp-content/themes/Aiac-immeubles/img/aiac-home-syndic.svg" alt="aiac immeubles syndic bénévoles">
 					<h4>COPROPRIÉTAIRES</h4>
 				</a>
@@ -200,7 +200,7 @@ include 'inc/slider.php'; ?>
 				<hr>
 			</div>
 		</div>
-		<div class="row justify-content-center">
+		<div class="row mx-10 justify-content-center">
 			<?php
 			$args = array(
 				'post_type' => 'post',
@@ -212,7 +212,7 @@ include 'inc/slider.php'; ?>
 			if ($loop_actu->have_posts()) {
 				while ($loop_actu->have_posts()) {
 					$loop_actu->the_post(); ?>
-					<div class="col-12 col-md-4 col-lg-3 actualite">
+					<div class="col-12 col-md-4 col-lg-4 actualite">
 						<a href="<?php the_permalink(); ?>">
 							<div class="content_actualite">
 								<?php echo the_post_thumbnail($post->ID); ?>
