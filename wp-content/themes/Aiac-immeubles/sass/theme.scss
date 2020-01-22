@@ -20,6 +20,12 @@
     padding-right: 0 !important;
 }
 
+a {
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     body {
         overflow-x: hidden;
