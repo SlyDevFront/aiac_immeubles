@@ -20,6 +20,11 @@
             font-size: 1.1em !important;
             color: #ffffff !important;
         }
+        .mega-sub-menu {
+            .mega-menu-column {
+                width: 100% !important;
+            }
+        }
     }
     @media screen and (min-width:1024px) {
         #mega-menu-28-0-1 {
@@ -29,6 +34,17 @@
                 top: 50% !important;
                 left: 50% !important;
                 transform: translate(-40%, -40%) !important;
+            }
+        }
+        #mega-menu-27-0-1 {
+            height: 355px !important;
+            .mega-sub-menu {
+                position: absolute !important;
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-40%, -60%) !important;
+                background: rgba(0, 0, 0, 0) !important;
+                width: 100% !important;
             }
         }
         .mega-sub-menu {

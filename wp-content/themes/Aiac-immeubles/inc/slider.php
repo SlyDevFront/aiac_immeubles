@@ -6,7 +6,7 @@
 			<ol class="carousel-indicators d-none d-lg-block">';
 		while (have_rows('slider')) : the_row(); ?>
 
-			<li data-target="#home_slider" data-slide-to="<?php echo $i; ?>" class="<?php if ($i == 0) echo 'active'; ?>"></li>
+			<li data-target="#home_slider" data-slide-to="<?php echo $i; ?>" class="<?php if ($i == 0) echo 'active'; ?>"><span class="current_indic">0<?php echo $i + 1; ?></span></li>
 
 		<?php $i++; // Increment the increment variable
 

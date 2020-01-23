@@ -25,13 +25,13 @@
             right: 0 !important;
         }
         img {
-            margin: 5% 0 !important;
+            margin: 5% 0 0 0 !important;
             width: auto !important;
         }
         #contact {
             button {
                 // padding: 2% 7% !important;
-                margin: 3%0 !important;
+                margin: 0 0 3% 0 !important;
             }
         }
     }
@@ -49,6 +49,12 @@
         #titre {
             p {
                 margin: 5% 0 0 0 !important;
+                i {
+                    position: absolute;
+                    right: 5%;
+                    top: 52%;
+                    font-size: 0.8em;
+                }
             }
         }
         p {
@@ -149,7 +155,7 @@
         .title {
             padding: 10% 0 !important;
             hr {
-                width: 40% !important;
+                width: 25% !important;
                 float: none !important;
                 margin-left: 0 !important;
             }
@@ -499,6 +505,13 @@
 }
 
 .experts {
+    @media screen and (min-width: 1024px) {
+        .expert {
+            &:first-child {
+                margin-left: 5% !important;
+            }
+        }
+    }
     @media screen and (min-width: 768px) and (max-width: 992px) {
         #intro {
             border: none !important;
@@ -629,6 +642,16 @@
             }
             .title_actu {
                 font-size: 0.875em !important;
+            }
+        }
+        .actualite {
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &:last-child {
+                display: none !important;
             }
         }
     }

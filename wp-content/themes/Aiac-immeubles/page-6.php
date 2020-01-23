@@ -21,14 +21,14 @@ include 'inc/slider.php'; ?>
 	<div class="mx-15">
 		<div class="row ">
 			<div class="col-12 col-md-3 text-center d-block d-sm-none my-auto d-lg-block text-md-right" id="titre">
-				<p>Vous êtes</p>
+				<p>Vous êtes&nbsp;<i class="fas d-inline d-md-none fa-caret-down"></i></p>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 text-center my-auto text-md-right" id="admin">
+			<div class="col-12 col-md-6 col-lg-3 text-center my-auto text-lg-right" id="admin">
 				<a href="<?php the_field('lien_administrateur_de_biens'); ?>"><img src="<?php get_template_directory(); ?>wp-content/themes/Aiac-immeubles/img/aiac-home-admin.svg" alt="aiac immeubles syndic bénévoles">
 					<h4>ADMINISTRATEUR DE BIENS</h4>
 				</a>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 text-center my-auto text-md-left" id="syndic">
+			<div class="col-12 col-md-6 col-lg-3 text-center my-auto text-lg-left" id="syndic">
 				<a href="<?php the_field('lien_syndic_benevoles'); ?>"><img src="<?php get_template_directory(); ?>wp-content/themes/Aiac-immeubles/img/aiac-home-syndic.svg" alt="aiac immeubles syndic bénévoles">
 					<h4>COPROPRIÉTAIRE</h4>
 				</a>
@@ -163,7 +163,7 @@ include 'inc/slider.php'; ?>
 				<button><a href="<?php the_field('lien_cta_equipe') ?>"><?php the_field('titre_cta_bouton_equipe') ?></a></button>
 			</div>
 			<div class="col-12 col-md-12 col-lg-9 team_list ">
-				<div class="row justify-content-center">
+				<div class="row justify-content-center justify-content-md-start">
 					<?php
 					$args = array(
 						'post_type' => 'experts',
@@ -212,7 +212,7 @@ include 'inc/slider.php'; ?>
 			if ($loop_actu->have_posts()) {
 				while ($loop_actu->have_posts()) {
 					$loop_actu->the_post(); ?>
-					<div class="col-12 col-md-4 col-lg-4 actualite">
+					<div class="col-12 col-md-6 col-lg-4 actualite">
 						<a href="<?php the_permalink(); ?>">
 							<div class="content_actualite">
 								<?php echo the_post_thumbnail($post->ID); ?>

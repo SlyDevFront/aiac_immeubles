@@ -58,8 +58,10 @@ $container = get_theme_mod('understrap_container_type');
 					<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 				</div>
 				<div class="col-2 text-lg-right my-auto d-none d-xl-block order-md-3" id="search">
-					<?php get_search_form();
+					<?php //get_search_form();
 					?>
+					<button id="searchsubmit" name="submit" type="submit"><i class="fas fa-search"></i></button>
+
 				</div>
 			</div>
 		</div>
