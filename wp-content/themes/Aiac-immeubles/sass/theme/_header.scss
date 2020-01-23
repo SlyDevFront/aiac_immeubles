@@ -3,6 +3,13 @@ body {
 }
 
 .entete {
+    @media screen and (max-width: 992px) {
+        top: 0 !important;
+        position: fixed !important;
+        width: 100% !important;
+        height: 45px !important;
+        z-index: 999999 !important;
+    }
     background-color: $second_light_grey;
     height: 45px;
     line-height: 45px;
@@ -38,6 +45,15 @@ body {
     .hidden {
         visibility: hidden !important;
     }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+        margin-top: 45px !important;
+    }
+    @media screen and (max-width: 992px) {
+        position: fixed !important;
+        width: 100% !important;
+        height: 105px !important;
+        z-index: 999999 !important;
+    }
     #searchform {
         input {
             border: none;
@@ -63,6 +79,7 @@ body {
         width: 3em;
         height: 3em;
         transition: 0.3s;
+        padding: 0 !important;
         i {
             color: #5c5c5c;
         }

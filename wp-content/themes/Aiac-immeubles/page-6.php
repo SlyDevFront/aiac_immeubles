@@ -30,7 +30,7 @@ include 'inc/slider.php'; ?>
 			</div>
 			<div class="col-12 col-md-6 col-lg-3 text-center my-auto text-md-left" id="syndic">
 				<a href="<?php the_field('lien_syndic_benevoles'); ?>"><img src="<?php get_template_directory(); ?>wp-content/themes/Aiac-immeubles/img/aiac-home-syndic.svg" alt="aiac immeubles syndic bénévoles">
-					<h4>COPROPRIÉTAIRES</h4>
+					<h4>COPROPRIÉTAIRE</h4>
 				</a>
 			</div>
 			<div class="col-12 col-md-12 col-lg-3 text-center text-lh-left my-auto" id="contact">
@@ -134,13 +134,13 @@ include 'inc/slider.php'; ?>
 <section class="qui_sommes_nous container-fluid">
 	<div class="mx-15">
 		<div class="row">
-			<div class="col-12 col-md-6" id="pic" data-aos="fade-right" data-aos-duration="1500">
+			<div class="col-12 col-lg-6" id="pic" data-aos="fade-right" data-aos-duration="1500">
 				<?php $pic = get_field('visuel_');
 				//var_dump($pic);
 				?>
 				<img src="<?php echo $pic['sizes']['medium_large']; ?>" alt="<?php echo $pic['description']; ?>">
 			</div>
-			<div class="col-12 col-md-5 title text-left my-auto" data-aos="fade-right" data-aos-duration="1500">
+			<div class="col-12 col-lg-5 title text-left my-auto" data-aos="fade-right" data-aos-duration="1500">
 				<h3><?php the_field('titre_h3_immeuble'); ?></h3>
 				<h5><?php the_field('titre_h5_immeuble'); ?></h5>
 				<hr>
@@ -150,7 +150,7 @@ include 'inc/slider.php'; ?>
 				</p>
 				<button><a href="<?php the_field('lien_bouton') ?>"><?php the_field('titre_bouton') ?></a></button>
 			</div>
-			<div class="border_dark_grey d-none d-lg-block"></div>
+			<div class="border_dark_grey d-none d-sm-block"></div>
 		</div>
 	</div>
 </section>
@@ -187,7 +187,7 @@ include 'inc/slider.php'; ?>
 					?>
 				</div>
 			</div>
-			<div class="border_grey d-none d-lg-block"></div>
+			<div class="border_grey d-none d-sm-block"></div>
 		</div>
 	</div>
 </section>

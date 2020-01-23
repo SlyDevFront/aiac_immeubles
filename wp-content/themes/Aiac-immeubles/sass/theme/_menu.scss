@@ -16,6 +16,10 @@
     }
     @media screen and (max-width: 768px) {
         padding: 0;
+        .mega-menu-link {
+            font-size: 1.1em !important;
+            color: #ffffff !important;
+        }
     }
     @media screen and (min-width:1024px) {
         #mega-menu-28-0-1 {
@@ -24,7 +28,7 @@
                 position: absolute !important;
                 top: 50% !important;
                 left: 50% !important;
-                transform: translate(-40%, -50%) !important;
+                transform: translate(-40%, -40%) !important;
             }
         }
         .mega-sub-menu {
@@ -42,7 +46,7 @@
             }
             .mega-menu-link {
                 color: #363737 !important;
-                font-size: 1.041875em !important;
+                font-size: 1.2em !important;
                 font-weight: 400 !important;
             }
             .mega-menu-row {
@@ -63,7 +67,7 @@
             }
             p {
                 font-family: $main_font !important;
-                font-size: 0.91125em !important;
+                font-size: 1.1em !important;
                 font-weight: 200 !important;
                 color: #f7f7f7 !important;
                 margin-bottom: 0 !important;
@@ -102,7 +106,7 @@
     margin-left: 1em;
     @media screen and (min-width: 992px) {
         a {
-            border: 1px solid rgb(54, 55, 55) !important;
+            border: 1px solid #ffffff !important;
             border-radius: 35px !important;
             line-height: 2.7em !important;
             height: 2.9em !important;

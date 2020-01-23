@@ -11,13 +11,11 @@
 		<?php $i++; // Increment the increment variable
 
 		endwhile; //End the loop
-		echo '<span id="index">' . $i . '</span>';
 		echo 	'</ol>
 
 		  <div class="carousel-inner">';
 		$i = 0; // Set the increment variable
 		while (have_rows('slider')) : the_row();
-
 			$image = get_sub_field('visuel');
 			$text = get_sub_field('titre_1');
 			$text2 = get_sub_field('titre_2');

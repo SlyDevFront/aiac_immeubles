@@ -13,7 +13,10 @@
         }
         .icon {
             li {
-                padding: 7px 14px !important;
+                padding: 14px 17px !important;
+                i {
+                    vertical-align: baseline;
+                }
             }
         }
     }
