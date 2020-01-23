@@ -70,7 +70,7 @@ include 'inc/slider.php'; ?>
 								<a href="<?php the_permalink(); ?>">
 									<div class="garantie_item_container">
 										<h4><?php the_title(); ?></h4>
-										<img src="<?php get_template_directory_uri(); ?>wp-content/themes/Aiac-immeubles/img/arrow_who.png" alt="">
+										<img src="<?php get_template_directory_uri(); ?>wp-content/themes/Aiac-immeubles/img/arrow_who.svg" alt="">
 									</div>
 								</a>
 
@@ -216,7 +216,7 @@ include 'inc/slider.php'; ?>
 						<a href="<?php the_permalink(); ?>">
 							<div class="content_actualite">
 								<?php echo the_post_thumbnail($post->ID); ?>
-								<p class="date"><?php the_date(); ?> <img class="arrow" src="<?php get_template_directory_uri(); ?>wp-content/themes/Aiac-immeubles/img/arrow_who.png" alt="">
+								<p class="date"><?php the_date(); ?> <img class="arrow" src="<?php get_template_directory_uri(); ?>wp-content/themes/Aiac-immeubles/img/arrow_who.svg" alt="">
 								</p>
 
 								<h6 class="text-left title_actu"><?php the_title(); ?></h6>
