@@ -142,14 +142,7 @@
 
 .garantie {
     @media screen and (min-width: 1024px) and (max-width: 1024px) {
-        .big_pres {
-            img {
-                position: absolute !important;
-                top: 25% !important;
-                right: 15% !important;
-                width: 78% !important;
-            }
-        }
+        .big_pres {}
     }
     @media screen and (min-width: 768px) and (max-width: 992px) {
         .title {
@@ -163,9 +156,7 @@
         .big_pres {
             max-width: 96% !important;
             margin-left: 2%;
-            img {
-                right: 31% !important;
-            }
+            img {}
         }
         .garantie_item_container {
             margin: 2% 0 !important;
@@ -195,10 +186,10 @@
         }
         .big_pres {
             max-width: 92% !important;
-            img {
-                top: 15% !important;
-                right: 20% !important;
-            }
+            // img {
+            //     top: 15% !important;
+            //     right: 20% !important;
+            // }
             margin: 0 auto !important;
         }
         .garantie_item_container {
@@ -206,9 +197,6 @@
             margin-top: 5% !important;
             h4 {
                 transform: translate(-80%, -35%) !important;
-            }
-            img {
-                top: 50% !important;
             }
         }
     }
@@ -242,10 +230,16 @@
     .big_pres {
         background-color: $primary_light_grey;
         height: 290px;
-        img {
-            position: absolute;
-            top: 15%;
-            right: 15%;
+        h5 {
+            font-family: Niramit, sans-serif;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgb(61, 76, 87);
+            margin: 15px 0 20px 0;
+        }
+        .pres_container {
+            margin-top: 15%;
         }
     }
     .garantie_item_container {

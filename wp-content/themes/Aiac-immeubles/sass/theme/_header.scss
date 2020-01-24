@@ -54,6 +54,12 @@ body {
         height: 105px !important;
         z-index: 999999 !important;
     }
+    .input-group-append {
+        margin-left: -5px !important;
+    }
+}
+
+#search {
     #searchform {
         input {
             border: none;
@@ -68,9 +74,6 @@ body {
                 // outline: none !important;
             }
         }
-    }
-    .input-group-append {
-        margin-left: -5px !important;
     }
     #searchsubmit {
         background: rgb(255, 255, 255);

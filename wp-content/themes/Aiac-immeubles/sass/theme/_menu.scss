@@ -118,20 +118,18 @@
     min-height: 355px !important;
 }
 
-.mega-acces_client {
+.acces_client {
     margin-left: 1em;
-    @media screen and (min-width: 992px) {
-        a {
-            border: 1px solid #ffffff !important;
-            border-radius: 35px !important;
-            line-height: 2.7em !important;
-            height: 2.9em !important;
-            padding: 0 20px !important;
-            transition: .3s;
-            &:hover {
-                border-color: $primary_blue !important;
-                text-decoration: none !important;
-            }
+    a {
+        border: 1px solid #ffffff !important;
+        border-radius: 35px !important;
+        line-height: 2.7em !important;
+        height: 2.9em !important;
+        padding: 0 20px !important;
+        transition: .3s;
+        &:hover {
+            border-color: $primary_blue !important;
+            text-decoration: none !important;
         }
     }
 }
@@ -154,4 +152,127 @@
 
 .mega-menu-toggle {
     //background: rgb(62, 68, 78) !important;
+}
+
+.logo_mobile {
+    background-image: url(../img/aiac-logo.png) !important;
+    height: 78px !important;
+    width: 100%;
+    background-position: top 0 left 10px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    #mega-menu-item-232 {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .mega-menu-link {
+        padding-left: 0 !important;
+    }
+    .mega-sub-menu {
+        background: none !important;
+        .mega-menu-item {
+            padding: 15px 0 !important;
+        }
+    }
+    #mega-menu-wrap-primary .mega-menu-toggle+#mega-menu-primary {
+        padding: 3% !important;
+    }
+    #mega-menu-item-232 {
+        margin-top: 35px !important;
+    }
+    #mega-menu-item-232 {
+        background-color: $primary_blue !important;
+        a {
+            color: #ffffff !important;
+        }
+    }
+    .mega-acces_client {
+        width: 60% !important;
+        margin: 5% 0 !important;
+    }
+    .mega-toggle-on {
+        .dashicons-search {
+            //border-top: 1px solid !important;
+            color: #ffffff !important;
+        }
+        #mega-menu-item-231 {
+            border-color: #000000 !important;
+            position: relative !important;
+        }
+    }
+    #mega-menu-item-230 {
+        margin-top: 10% !important;
+    }
+    #mega-menu-item-231 {
+        position: relative !important;
+        .mega-sub-menu {
+            padding: 0 !important;
+            margin-top: 10% !important;
+        }
+    }
+    .dashicons-admin-appearance {
+        font-size: 2em !important;
+        text-align: center;
+        margin: 15% 0 0 0 !important;
+        height: auto !important;
+        border-top: 1px solid #ffffff !important;
+        padding-top: 15% !important;
+        background: none !important;
+    }
+    .dashicons-admin-appearance:before {
+        content: "\f0e1" !important;
+        font-family: fontawesome !important;
+        border: 1px solid #ffffff !important;
+        padding: 6px 15px !important;
+        border-radius: 50% !important;
+        font-size: 1.5em !important;
+    }
+    .dashicons-search {
+        background: none !important;
+        position: absolute !important;
+        top: -3.5em !important;
+        left: 4em !important;
+        .mega-indicator {
+            width: auto !important;
+            position: absolute !important;
+            top: 42% !important;
+            left: 22% !important;
+            color: rgb(62, 68, 78) !important;
+        }
+        &::before {
+            border: 1px solid #ffffff !important;
+            padding: 6px 14px !important;
+            border-radius: 50% !important;
+            font-size: 1.5em !important;
+        }
+    }
+    #mega-menu-item-search-4 {
+        padding: 0 !important;
+        margin-bottom: 10% !important;
+        input {
+            border: none;
+            border-bottom: 1px solid #ffffff !important;
+            border-radius: 0 !important;
+            background: none !important;
+            color: #ffffff;
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+        span {
+            margin-left: 0 !important;
+        }
+        button {
+            padding: 0 !important;
+            background-color: $primary_blue !important;
+            border: none !important;
+            color: #ffffff !important;
+            width: 50px !important;
+        }
+    }
 }

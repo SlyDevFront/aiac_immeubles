@@ -48,10 +48,12 @@ include 'inc/slider.php'; ?>
 				<h5><?php the_field('titre_h5_section'); ?></h5>
 				<hr class="d-none d-md-block">
 			</div>
-			<div class="col-12 col-md-12 col-lg-3 big_pres">
-				<?php $img = get_field('visuel_bloc_gauche'); ?>
-				<img class="d-none d-md-block" src="<?php echo $img['url']; ?>" alt="<?php echo $img['description']; ?>">
-				<img class="d-block d-md-none" src="<?php get_template_directory_uri(); ?>wp-content/themes/Aiac-immeubles/img/aiac-contrat-assurances_mobile.png" alt="">
+			<div class="col-12 col-md-12 col-lg-3 text-right big_pres">
+				<div class="my-auto pres_container">
+					<?php $img = get_field('visuel_bloc_gauche'); ?>
+					<img class="" src="<?php echo $img['url']; ?>" alt="<?php echo $img['description']; ?>">
+					<h5><?php the_field('texte_accompagnant_bloc_gauche'); ?></h5>
+				</div>
 			</div>
 			<div class="col-12 col-md-12 col-lg-9 garanties">
 				<div class="row justify-content-center justify-content-lg-start">
