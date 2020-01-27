@@ -73,21 +73,6 @@
         }
     }
     .title {
-        h2 {
-            font-family: $main_font;
-            font-size: 2.8125em;
-            font-weight: 500;
-            color: #3d4c57;
-            margin-bottom: 0 !important;
-        }
-        h5 {
-            font-family: $main_font;
-            font-weight: 300;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #3d4c57;
-            margin: 15px 0 20px 0;
-        }
         hr {
             width: 12%;
             border-top: 5px solid rgb(61, 76, 87);
@@ -95,17 +80,11 @@
             margin: 0;
         }
         p {
-            font-family: $main_font;
-            font-size: 1.0625em;
-            font-weight: 200;
-            color: #3d4c57;
             margin: 4% 0;
-            line-height: 26px;
         }
         button {
             background-color: rgb(4, 145, 208);
             border: none !important;
-            padding: 2% 5%;
             border-radius: 35px;
             transition: 0.3s;
             &:hover {
@@ -136,8 +115,8 @@
             padding: 5% !important;
         }
         p {
-            font-size: 1.875em;
-            line-height: 36px;
+            font-size: 1.875em !important;
+            line-height: 36px !important;
             font-weight: 300;
             margin: 0;
             @media screen and (max-width: 768px) {
@@ -151,12 +130,12 @@
             padding: 5% !important;
         }
         p {
-            font-size: 1.3125em;
-            line-height: 36px;
-            font-weight: 300;
-            margin: 0;
-            letter-spacing: 2px;
-            width: 89%;
+            font-size: 1.3125em !important;
+            line-height: 36px !important;
+            font-weight: 300 !important;
+            margin: 0 !important;
+            letter-spacing: 2px !important;
+            width: 89% !important;
             @media screen and (max-width: 768px) {
                 width: 100% !important;
             }
@@ -193,13 +172,8 @@
             background: rgb(255, 255, 255);
             width: 70%;
             margin: 0 auto;
+            text-transform: capitalize;
         }
-    }
-    p {
-        font-size: 1.0625em;
-        line-height: 30px;
-        font-weight: 200;
-        margin: 0;
     }
 }
 
@@ -269,19 +243,22 @@
         }
     }
     .definition {
-        font-size: 0.78125em;
-        text-transform: uppercase;
-        font-style: italic;
+        font-size: 0.78125em !important;
+        text-transform: uppercase !important;
+        font-style: italic !important;
+        color: #ffffff !important;
     }
     .number {
-        font-size: 5.208125em;
-        line-height: 0.85em;
-        font-weight: 400;
+        font-size: 5.208125em !important;
+        line-height: 0.85em !important;
+        font-weight: 400 !important;
+        color: #ffffff !important;
     }
     .unite {
-        font-size: 1.301875em;
-        line-height: 30px;
-        font-weight: 200;
+        font-size: 1.301875em !important;
+        line-height: 30px !important;
+        font-weight: 200 !important;
+        color: #ffffff !important;
     }
     #chiffre-1 {
         background-color: #048ecb !important;

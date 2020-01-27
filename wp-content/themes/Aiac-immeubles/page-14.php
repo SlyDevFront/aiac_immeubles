@@ -24,6 +24,11 @@ get_header(); ?>
 <section class="container-fluid header-page my-auto" style="background: url('<?php the_field('background_titre'); ?>">
 	<div class="header-overlay">
 		<div class="mx-15">
+			<?php
+			if (function_exists('yoast_breadcrumb')) {
+				yoast_breadcrumb('<p class="unite" id="breadcrumbs">', '</p>');
+			}
+			?>
 			<div class="row justify-content-center">
 				<div class="col-12 col-lg-10">
 					<h1 class="page-title text-center text-lg-left"><?php the_title(); ?></h1>
@@ -94,10 +99,12 @@ get_header(); ?>
 <section class="garantie container-fluid" data-aos="fade-up" data-aos-duration="2000">
 	<div class="mx-15">
 		<div class="row">
-			<div class="col-12 col-md-12 col-lg-3 big_pres">
-				<?php $img = get_field('visuel_bloc_garanties'); ?>
-				<img class="d-none d-md-block" src="<?php echo $img['url']; ?>" alt="<?php echo $img['description']; ?>">
-				<img class="d-block d-md-none" src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-contrat-assurances_mobile.png" alt="">
+			<div class="col-12 col-md-12 col-lg-3 text-center text-lg-right big_pres">
+				<div class="pres_container">
+					<?php $img = get_field('visuel_bloc_garanties'); ?>
+					<img class="" src="<?php echo $img['url']; ?>" alt="<?php echo $img['description']; ?>">
+					<h5><?php the_field('text_accompagnement_visuel'); ?></h5>
+				</div>
 			</div>
 			<div class="col-12 col-md-12 col-lg-9 garanties">
 				<div class="row justify-content-center justify-content-lg-start">
@@ -116,7 +123,7 @@ get_header(); ?>
 								<a href="<?php the_permalink(); ?>">
 									<div class="garantie_item_container">
 										<h4><?php the_title(); ?></h4>
-										<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/arrow_who.png" alt="">
+										<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/arrow_who.svg" alt="">
 									</div>
 								</a>
 

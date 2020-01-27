@@ -84,7 +84,8 @@
         color: $primary_dark_grey;
         p {
             @media screen and (min-width: 1199px) {
-                line-height: 200px;
+                line-height: 200px !important;
+                font-weight: 300 !important;
             }
             &::after {
                 content: url(../img/arrow_who.png);
@@ -202,24 +203,14 @@
     }
     .title {
         padding: 5% 0;
-        h1 {
-            font-family: $main_font;
-            font-size: 2.8125em;
-            font-weight: 400;
-            color: #3d4c57;
-            margin-bottom: 0;
-            span {
-                color: $primary_blue;
-            }
-        }
-        h5 {
-            font-family: $main_font;
-            font-weight: 300;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #3d4c57;
-            margin: 15px 0 20px 0;
-        }
+        // h5 {
+        //     font-family: $main_font;
+        //     font-weight: 300;
+        //     text-transform: uppercase;
+        //     letter-spacing: 2px;
+        //     color: #3d4c57;
+        //     margin: 15px 0 20px 0;
+        // }
         hr {
             width: 6%;
             float: left;
@@ -237,41 +228,47 @@
             letter-spacing: 2px;
             color: rgb(61, 76, 87);
             margin: 15px 0 20px 0;
+            float: right;
+            width: 75%;
         }
         .pres_container {
-            margin-top: 15%;
+            margin-top: 12%;
+            @media screen and (min-width: 768px) and (max-width: 992px) {
+                margin-top: 10% !important;
+            }
         }
     }
-    .garantie_item_container {
-        background-color: $primary_light_grey;
-        border-left: 20px solid $primary_blue;
-        height: 125px;
-        margin-bottom: 40px;
-        transition: 0.3s;
+}
+
+.garantie_item_container {
+    background-color: $primary_light_grey;
+    border-left: 20px solid $primary_blue;
+    height: 125px;
+    margin-bottom: 40px;
+    transition: 0.3s;
+    h4 {
+        font-family: $main_font;
+        font-weight: 200;
+        color: #3d4c57;
+        width: 45%;
+        line-height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-80%, -80%);
+        @media screen and (min-width: 1199px) and (max-width: 1440px) {
+            font-size: 1.2em;
+        }
+    }
+    img {
+        position: absolute;
+        right: 10%;
+        top: 35%;
+    }
+    &:hover {
+        background: $primary_blue;
         h4 {
-            font-family: $main_font;
-            font-weight: 200;
-            color: #3d4c57;
-            width: 45%;
-            line-height: 30px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-80%, -80%);
-            @media screen and (min-width: 1199px) and (max-width: 1440px) {
-                font-size: 1.2em;
-            }
-        }
-        img {
-            position: absolute;
-            right: 10%;
-            top: 35%;
-        }
-        &:hover {
-            background: $primary_blue;
-            h4 {
-                color: #ffffff;
-            }
+            color: #ffffff;
         }
     }
 }
@@ -326,24 +323,6 @@
     padding-bottom: 5%;
     .title {
         padding: 5% 0;
-        h3 {
-            font-family: $main_font;
-            font-size: 2.8125em;
-            font-weight: 400;
-            color: #3d4c57;
-            margin-bottom: 0 !important;
-            span {
-                color: $primary_blue;
-            }
-        }
-        h5 {
-            font-family: $main_font;
-            font-weight: 300;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #3d4c57;
-            margin: 25px 0 30px 0;
-        }
         hr {
             width: 6%;
             //float: left;
@@ -360,13 +339,6 @@
                 color: #000000;
                 line-height: 30px;
                 margin-bottom: 30px;
-            }
-            p {
-                font-family: $main_font;
-                font-size: 1.0625em;
-                font-weight: 200;
-                color: #000000;
-                line-height: 26px;
             }
         }
         .goals_img {
@@ -447,21 +419,21 @@
         }
     }
     .title {
-        h3 {
-            font-family: $main_font;
-            font-size: 2.8125em;
-            font-weight: 500;
-            color: #3d4c57;
-            margin-bottom: 0 !important;
-        }
-        h5 {
-            font-family: $main_font;
-            font-weight: 300;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #3d4c57;
-            margin: 2% 0 3% 0;
-        }
+        // h3 {
+        //     font-family: $main_font;
+        //     font-size: 2.8125em;
+        //     font-weight: 500;
+        //     color: #3d4c57;
+        //     margin-bottom: 0 !important;
+        // }
+        // h5 {
+        //     font-family: $main_font;
+        //     font-weight: 300;
+        //     text-transform: uppercase;
+        //     letter-spacing: 2px;
+        //     color: #3d4c57;
+        //     margin: 2% 0 3% 0;
+        // }
         hr {
             width: 20%;
             border-top: 5px solid rgb(61, 76, 87);
@@ -469,12 +441,7 @@
             margin: 0;
         }
         p {
-            font-family: $main_font;
-            font-size: 1.0625em;
-            font-weight: 200;
-            color: #3d4c57;
             margin: 8% 0;
-            width: 100%;
         }
         button {
             background-color: rgb(4, 145, 208);
@@ -655,21 +622,6 @@
     }
     .title {
         padding-bottom: 5%;
-        h3 {
-            font-family: $main_font;
-            font-size: 2.8125em;
-            font-weight: 400;
-            color: #3d4c57;
-            margin-bottom: 0 !important;
-        }
-        h5 {
-            font-family: $main_font;
-            font-weight: 300;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #3d4c57;
-            margin: 20px 0 25px 0;
-        }
         hr {
             width: 6%;
             border-top: 5px solid rgb(61, 76, 87);

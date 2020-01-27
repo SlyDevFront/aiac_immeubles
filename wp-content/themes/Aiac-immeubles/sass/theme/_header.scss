@@ -16,7 +16,7 @@ body {
     .baseline {
         color: #545454;
         letter-spacing: 1px;
-        font-size: 0.825em;
+        font-size: 0.825em !important;
     }
     .link {
         color: #00457c;
@@ -109,7 +109,7 @@ body {
             color: #ffffff;
             line-height: 60px;
             margin: 0;
-            padding: 8% 0;
+            padding: 4% 0 8% 0;
             @media screen and (max-width: 768px) {
                 font-size: 1.8em !important;
                 padding: 10% 0 !important;
@@ -119,5 +119,19 @@ body {
                 padding: 20% 0 !important;
             }
         }
+    }
+}
+
+#breadcrumbs {
+    margin-bottom: 0 !important;
+    a {
+        color: #ffffff !important;
+    }
+    * {
+        color: rgb(255, 255, 255) !important;
+        letter-spacing: 4px;
+        line-height: 60px !important;
+        margin: 0;
+        font-size: 0.91125em !important;
     }
 }
