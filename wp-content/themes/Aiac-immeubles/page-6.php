@@ -15,20 +15,21 @@
 defined('ABSPATH') || exit;
 
 get_header();
-include 'inc/slider.php'; ?>
+include 'inc/slider.php';
+?>
 
 <section class="vous_etes container-fluid">
 	<div class="mx-15">
 		<div class="row ">
 			<div class="col-12 col-md-3 text-center d-block d-sm-none my-auto d-lg-block text-md-right" id="titre">
-				<p>Vous êtes&nbsp;<i class="fas d-inline d-md-none fa-caret-down"></i></p>
+				<p id="vousetes">Vous êtes&nbsp;<i class="fas d-inline d-md-none fa-caret-down"></i></p>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 text-center my-auto text-lg-right" id="admin">
+			<div class="col-12 col-md-6 col-lg-3 text-center my-auto " id="admin">
 				<a href="<?php the_field('lien_administrateur_de_biens'); ?>"><img src="<?php get_template_directory(); ?>wp-content/themes/Aiac-immeubles/img/aiac-home-admin.svg" alt="aiac immeubles syndic bénévoles">
 					<h4>ADMINISTRATEUR DE BIENS</h4>
 				</a>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3 text-center my-auto text-lg-left" id="syndic">
+			<div class="col-12 col-md-6 col-lg-3 text-center my-auto " id="syndic">
 				<a href="<?php the_field('lien_syndic_benevoles'); ?>"><img src="<?php get_template_directory(); ?>wp-content/themes/Aiac-immeubles/img/aiac-home-syndic.svg" alt="aiac immeubles syndic bénévoles">
 					<h4>COPROPRIÉTAIRE</h4>
 				</a>
@@ -48,7 +49,7 @@ include 'inc/slider.php'; ?>
 				<h5><?php the_field('titre_h5_section'); ?></h5>
 				<hr class="d-none d-md-block">
 			</div>
-			<div class="col-12 col-md-12 col-lg-3 text-center text-lg-right big_pres">
+			<div class="col-12 col-md-12 col-lg-3 text-right big_pres">
 				<div class="pres_container" data-aos="fade-right" data-aos-duration="1000">
 					<?php $img = get_field('visuel_bloc_gauche'); ?>
 					<img class="" src="<?php echo $img['url']; ?>" alt="<?php echo $img['description']; ?>">

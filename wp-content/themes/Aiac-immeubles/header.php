@@ -40,7 +40,7 @@ $container = get_theme_mod('understrap_container_type');
 				</div>
 				<div class="col-12 col-sm-4 text-right">
 					<p class="link">
-						<a href="http://prepaiac.eanet.fr" target="_blank" rel="noopener noreferrer">aiac Courtage</a>
+						<a href="http://prepaiac.eanet.fr" target="_blank" rel="noopener noreferrer">aiac courtage</a>
 					</p>
 				</div>
 			</div>

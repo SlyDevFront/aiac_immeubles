@@ -118,7 +118,7 @@
         }
     }
     #admin {
-        padding-right: 5%;
+        //padding-right: 5%;
         h4 {
             font-family: $main_font;
             text-transform: uppercase;
@@ -129,7 +129,7 @@
         }
     }
     #syndic {
-        padding-left: 5%;
+        //padding-left: 5%;
         h4 {
             font-family: $main_font;
             text-transform: uppercase;
@@ -228,8 +228,10 @@
             letter-spacing: 2px;
             color: rgb(61, 76, 87);
             margin: 15px 0 20px 0;
-            float: right;
-            width: 75%;
+            @media screen and (min-width: 10245px) {
+                float: right;
+                width: 75%;
+            }
         }
         .pres_container {
             margin-top: 12%;
@@ -658,16 +660,16 @@
         .title_actu {
             font-family: $main_font;
             font-weight: bold;
-            font-size: 1.0625em;
+            font-size: 1.125em;
             color: #000000;
             line-height: 25px;
             margin: 0;
         }
         &:hover {
             transition: 0.3s;
-            filter: brightness(1.05);
+            filter: opacity(0.8);
             img {
-                filter: brightness(1.05);
+                filter: opacity(0.8);
             }
         }
     }

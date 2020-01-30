@@ -85,7 +85,7 @@ section {
     height: 300px;
     width: 300px;
     margin: 0 auto;
-    background-image: url('http://prepaiacim.eanet.fr/wp-content/themes/Aiac-immeubles/img/border_cercle.png');
+    background-image: url("http://prepaiacim.eanet.fr/wp-content/themes/Aiac-immeubles/img/border_cercle.png");
     img {
         width: 90%;
         height: 90%;
@@ -144,12 +144,13 @@ h5 {
 }
 
 p {
-    &:not(.contrat_accroche) {
+    &:not(.textgauche):not(.link):not(.baseline):not(.textwidget):not(.copyright):not(#vousetes):not(.unite):not(.definition):not(.number) {
         font-family: Niramit, sans-serif !important;
         font-size: 1.0625em !important;
         font-weight: 300 !important;
         color: rgb(61, 76, 87) !important;
         line-height: 26px !important;
+        color: #000000 !important;
     }
 }
 

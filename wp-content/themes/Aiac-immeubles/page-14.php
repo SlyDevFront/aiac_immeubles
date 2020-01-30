@@ -87,7 +87,7 @@ get_header(); ?>
 	<div class="mx-15">
 		<div class="row my-auto">
 			<div class="col-6 col-lg-8 text-right left">
-				<p> <?php the_field('texte_de_gauche'); ?></p>
+				<?php the_field('texte_de_gauche'); ?>
 			</div>
 			<div class="col-6 col-lg-2 text-left right">
 				<p><?php the_field('phrase_accroche_droite'); ?></p>
@@ -99,7 +99,7 @@ get_header(); ?>
 <section class="garantie container-fluid" data-aos="fade-up" data-aos-duration="2000">
 	<div class="mx-15">
 		<div class="row">
-			<div class="col-12 col-md-12 col-lg-3 text-center text-lg-right big_pres">
+			<div class="col-12 col-md-12 col-lg-3 text-right big_pres">
 				<div class="pres_container">
 					<?php $img = get_field('visuel_bloc_garanties'); ?>
 					<img class="" src="<?php echo $img['url']; ?>" alt="<?php echo $img['description']; ?>">

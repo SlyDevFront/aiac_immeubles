@@ -138,6 +138,7 @@
 .custom-html-widget {
     a {
         color: #ffffff !important;
+        font-size: 1.1em !important;
         &:hover {
             text-decoration: !important;
         }
@@ -190,6 +191,7 @@
         background-color: $primary_blue !important;
         a {
             color: #ffffff !important;
+            padding-left: 1em !important;
         }
     }
     .mega-acces_client {
