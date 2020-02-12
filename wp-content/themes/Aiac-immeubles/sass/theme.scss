@@ -15,6 +15,8 @@
 @import "theme/_home";
 @import "theme/_footer";
 @import "theme/_qui-sommes-nous";
+@import "theme/_blog";
+@import "theme/_team";
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -27,6 +29,9 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+    .header-page {
+        padding-top: 105px;
+    }
     body {
         overflow-x: hidden;
     }
@@ -144,7 +149,7 @@ h5 {
 }
 
 p {
-    &:not(.textgauche):not(.link):not(.baseline):not(.textwidget):not(.copyright):not(#vousetes):not(.unite):not(.definition):not(.number) {
+    &:not(.textgauche):not(.accroche_text):not(.link):not(.baseline):not(.textwidget):not(.copyright):not(#vousetes):not(.unite):not(.definition):not(.number) {
         font-family: Niramit, sans-serif !important;
         font-size: 1.0625em !important;
         font-weight: 300 !important;

@@ -1,0 +1,199 @@
+.blog {
+    height: 440px;
+    background-attachment: fixed !important;
+    .header-overlay {
+        height: 100%;
+    }
+}
+
+.video {
+    .header-overlay {
+        background: none !important;
+        #breadcrumbs {
+            @media screen and (min-width: 992px) {
+                position: absolute !important;
+            }
+        }
+        iframe {
+            @media screen and (max-width: 767px) {
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+    }
+}
+
+#content {
+    @media screen and (max-width: 992px) {
+        .alignright {
+            display: inline;
+            float: right;
+            margin-left: 1.5em;
+            margin-bottom: 10%;
+            width: 100%;
+        }
+        h2 {
+            line-height: 40px !important;
+        }
+    }
+    h2 {
+        color: $primary_blue !important;
+        font-size: 2.5em !important;
+        font-weight: 500;
+        margin-bottom: 50px !important;
+        line-height: 25px;
+    }
+    a {
+        text-decoration: underline;
+        color: $primary_blue !important;
+    }
+    hr {
+        width: 100px;
+        border-top: 5px solid rgb(61, 76, 87);
+    }
+    time {
+        text-transform: uppercase;
+        font-family: $main_font;
+        font-size: 0.9375em;
+        font-weight: 300;
+        line-height: 43px;
+        letter-spacing: 1px;
+    }
+    button {
+        background-color: rgb(4, 145, 208);
+        border: none !important;
+        border-radius: 35px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        -moz-transition: .3s;
+        transition: .3s;
+        &:hover {
+            filter: brightness(1.2);
+        }
+        a {
+            text-transform: uppercase;
+            color: #ffffff !important;
+            text-decoration: none !important;
+        }
+    }
+    .rs_buttons {
+        float: right;
+        line-height: 2.2em;
+        span {
+            font-size: 1.0518em;
+            color: #3b4954;
+            letter-spacing: 2px;
+        }
+    }
+    .share_rs {
+        padding: 0 !important;
+        list-style: none;
+        background: #ffffff;
+        display: inline;
+        vertical-align: text-top;
+        @media screen and (max-width: 767px) {
+            display: inline-block !important;
+            margin: 10% 0 !important;
+        }
+        li {
+            display: inline;
+            margin: 0 0.8em;
+            hr {
+                width: 90px;
+                border-top: 2px solid rgb(61, 76, 87);
+                display: inline-block;
+                margin: 0;
+                vertical-align: middle;
+                @media screen and (max-width: 767px) {
+                    width: 2.2em;
+                }
+            }
+            a {
+                text-decoration: none !important;
+                i {
+                    color: #3b4954;
+                    transition: all .3s;
+                    font-size: 1.4em;
+                    vertical-align: middle;
+                    &:hover {
+                        color: $primary_blue;
+                    }
+                }
+            }
+        }
+    }
+    ul:not(.share_rs) {
+        margin: 2em 0 !important;
+        list-style: none;
+        padding: 0;
+        li {
+            color: #3b4954 !important;
+            font-size: 1.041875em !important;
+            line-height: initial;
+            &::before {
+                content: url('../img/aiac-courtage-5c-liste-after.svg');
+                vertical-align: sub;
+                margin-right: 1em;
+            }
+        }
+    }
+    .social_row {
+        padding-top: 4%;
+        position: relative;
+    }
+    main {
+        margin-top: 10px;
+    }
+    .navigation {
+        //height: 125px;
+        padding: 4% 0;
+        @media screen and (max-width: 767px) {
+            #firstmobile {
+                margin-bottom: 10% !important;
+            }
+        }
+        #left {
+            background-color: rgb(232, 232, 232);
+            padding: 5%;
+            border-right: 20px solid rgb(4, 145, 208);
+            transition: .3s;
+            img {
+                float: left;
+                transform: rotate(180deg);
+                margin-top: 1.2em;
+            }
+            &:hover {
+                background-color: $primary_blue;
+                p,
+                a {
+                    color: #ffffff !important;
+                }
+            }
+        }
+        #right {
+            background-color: rgb(232, 232, 232);
+            padding: 5%;
+            border-left: 20px solid rgb(4, 145, 208);
+            transition: .3s;
+            img {
+                float: right;
+            }
+            &:hover {
+                background-color: $primary_blue;
+                p,
+                a {
+                    color: #ffffff !important;
+                }
+            }
+        }
+        p {
+            text-transform: uppercase;
+            color: #3b4954;
+            margin-bottom: 0 !important;
+        }
+        a {
+            text-decoration: none !important;
+            color: #3b4954 !important;
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.page_team {
+    padding-bottom: 5%;
+    .title {
+        padding: 3% 0;
+    }
+    h2 {
+        color: $primary_blue;
+    }
+    h5 {
+        text-transform: initial !important;
+    }
+    .expert {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 10%;
+        }
+        img {
+            width: 100% !important;
+        }
+        .expert_data {
+            position: relative;
+            background: #e8e8e8;
+            padding: 6%;
+            h6 {
+                font-family: $main_font;
+                font-weight: 200;
+                letter-spacing: 2px;
+                color: #000000;
+                font-size: 1.3125em;
+                margin: 0;
+                line-height: 36px;
+            }
+            p {
+                font-size: 1.875em !important;
+                line-height: 36px !important;
+                font-weight: 300;
+                margin: 0;
+                font-family: $main_font;
+                letter-spacing: 2px;
+                color: #000000;
+            }
+            hr {
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+                border: 0;
+                border-top: 4px solid #3b4954;
+                width: 30%;
+                @media screen and (max-width: 767px) {
+                    margin-top: 2rem !important;
+                }
+                @media screen and (max-width: 1024px) {
+                    margin-top: 1rem;
+                    margin-bottom: 4rem;
+                    border: 0;
+                    border-top: 4px solid rgb(59, 73, 84);
+                    width: 50%;
+                    border-top: 2px solid #3b4954 !important;
+                }
+            }
+            .link_team {
+                padding: 0 !important;
+                margin: 0 !important;
+                list-style: none;
+                position: absolute;
+                text-align: right;
+                width: 90%;
+                bottom: 15%;
+                @media screen and (max-width: 767px) {
+                    bottom: 8% !important;
+                }
+                @media screen and (max-width: 1024px) {
+                    text-align: center;
+                    bottom: 5%;
+                    left: 0;
+                    width: 100%;
+                }
+                li {
+                    display: inline;
+                    font-size: 2.325em !important;
+                    margin: 0 2%;
+                    @media screen and (max-width: 1024px) {
+                        margin: 0 5%;
+                        font-size: 1.875em !important;
+                    }
+                    a {
+                        color: #3b4954;
+                        transition: .3s;
+                        &:hover {
+                            color: $primary_blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team_accroche {
+    padding: 2% 0;
+    background: #e8e8e8;
+    @media screen and (max-width: 768px) {
+        padding: 8% 0 5% 0;
+        .accroche_text {
+            font-size: 1.3em !important;
+        }
+    }
+    .left {
+        border-right: 5px solid $second_dark_grey;
+        padding: 2% 0;
+        @media screen and (max-width: 768px) {
+            padding: 5% !important;
+            border-right: none !important;
+            border-bottom: 2px solid $second_dark_grey;
+            ;
+        }
+        .accroche_gauche {
+            font-size: 1.3125em !important;
+            line-height: 36px !important;
+            font-weight: 300 !important;
+            margin: 0 !important;
+            letter-spacing: 2px !important;
+            width: 80% !important;
+            @media screen and (max-width: 768px) {
+                width: 100% !important;
+            }
+        }
+    }
+    .right {
+        padding: 2%;
+        @media screen and (max-width: 768px) {
+            padding: 5% !important;
+        }
+        p {
+            font-size: 1.875em !important;
+            line-height: 36px !important;
+            font-weight: 300 !important;
+            margin: 0 !important;
+            letter-spacing: 2px !important;
+            width: 89% !important;
+            @media screen and (max-width: 768px) {
+                width: 100% !important;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            margin: auto 0 !important;
+        }
+    }
+    button {
+        background-color: rgb(4, 145, 208);
+        border: none !important;
+        border-radius: 35px;
+        transition: 0.3s;
+        &:hover {
+            filter: brightness(1.2);
+        }
+        a {
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            transition: 0.3s;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            margin: 7% 0 3% 0;
+        }
+    }
+}
