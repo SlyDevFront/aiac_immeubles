@@ -69,7 +69,7 @@
                 }
                 @media screen and (max-width: 1024px) {
                     text-align: center;
-                    bottom: 5%;
+                    bottom: 8%;
                     left: 0;
                     width: 100%;
                 }
@@ -108,9 +108,7 @@
         padding: 2% 0;
         @media screen and (max-width: 768px) {
             padding: 5% !important;
-            border-right: none !important;
-            border-bottom: 2px solid $second_dark_grey;
-            ;
+            border: none !important
         }
         .accroche_gauche {
             font-size: 1.3125em !important;
@@ -119,6 +117,7 @@
             margin: 0 !important;
             letter-spacing: 2px !important;
             width: 80% !important;
+            color: #3a4953;
             @media screen and (max-width: 768px) {
                 width: 100% !important;
             }
@@ -128,6 +127,7 @@
         padding: 2%;
         @media screen and (max-width: 768px) {
             padding: 5% !important;
+            border-left: 5px solid rgb(59, 73, 84);
         }
         p {
             font-size: 1.875em !important;
@@ -137,7 +137,8 @@
             letter-spacing: 2px !important;
             width: 89% !important;
             @media screen and (max-width: 768px) {
-                width: 100% !important;
+                width: auto !important;
+                font-size: 1.1em !important;
             }
         }
         @media screen and (max-width: 768px) {

@@ -53,8 +53,8 @@ get_header(); ?>
 									<p class="text-center text-md-left" data-aos="fade-up" data-aos-duration="1500"><?php the_field('poste_occupe'); ?></p>
 									<hr data-aos="fade-up" data-aos-duration="750">
 									<ul class="link_team" data-aos="fade-left" data-aos-duration="750">
-										<li><a href="mailto:<?php the_field('e-mail'); ?>"><i class="fas fa-at"></i></a></li>
-										<li><a href="tel:<?php the_field('telephone'); ?>"><i class="fas fa-phone-alt"></i></a></li>
+										<li><a href="mailto:<?php the_field('e-mail'); ?>"><i class="fa fa-at"></i></a></li>
+										<li><a href="tel:<?php the_field('telephone'); ?>"><i class="fa fa-phone"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -72,10 +72,10 @@ get_header(); ?>
 		<div class="row my-auto justify-content-center">
 			<div class="col-12 col-lg-10">
 				<div class="row">
-					<div class="col-12 col-sm-3 col-xl-2 my-auto text-left left" data-aos="fade-right" data-aos-duration="1500">
+					<div class="col-6 col-sm-4 col-xl-2 my-auto text-left left" data-aos="fade-right" data-aos-duration="1500">
 						<h6 class="accroche_gauche"><?php the_field('texte_accroche_gauche'); ?></h6>
 					</div>
-					<div class="col-12 col-sm-9 col-xl-7 my-auto text-left right" data-aos="fade-right" data-aos-duration="2000">
+					<div class="col-6 col-sm-8 col-xl-7 my-auto text-left right" data-aos="fade-right" data-aos-duration="2000">
 						<p class="accroche_text"><?php the_field('contenu_texte_accroche'); ?></p>
 					</div>
 					<div class="col-12 col-xl-3 my-auto text-center title " data-aos="fade-left" data-aos-duration="1000">

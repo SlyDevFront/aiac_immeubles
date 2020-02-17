@@ -67,7 +67,10 @@ $container = get_theme_mod('understrap_container_type');
 					<?php if (get_field('lien_pdf')) { ?>
 						<button><a href="<?php the_field('lien_pdf') ?>" target="_blank">télécharger le pdf</a></button>
 
+					<?php } else { ?>
+						<button style="visibility: hidden;"></button>
 					<?php } ?>
+
 					<div class="rs_buttons">
 						<ul class="share_rs">
 							<li><a href="https://www.facebook.com/sharer.php?u=<?php echo the_permalink(); ?>&t=<?php strip_tags(get_the_title()); ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;">
