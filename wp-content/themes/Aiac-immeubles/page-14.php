@@ -86,10 +86,10 @@ get_header(); ?>
 <section class="contrat_accroche container-fluid" data-aos="fade-up" data-aos-duration="2000">
 	<div class="mx-15">
 		<div class="row my-auto">
-			<div class="col-6 col-lg-8 text-right left">
+			<div class="col-6 col-md-8 col-lg-8 text-right left">
 				<?php the_field('texte_de_gauche'); ?>
 			</div>
-			<div class="col-6 col-lg-2 text-left right">
+			<div class="col-6 col-md-2 col-lg-2 text-left right">
 				<p class="phrase_accroche_droite"><?php the_field('phrase_accroche_droite'); ?></p>
 			</div>
 			<div class="border_grey d-none d-lg-block"></div>

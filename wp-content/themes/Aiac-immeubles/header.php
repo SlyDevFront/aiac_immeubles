@@ -54,10 +54,10 @@ $container = get_theme_mod('understrap_container_type');
 						the_custom_logo();
 					} ?>
 				</div>
-				<div class="col-6 col-lg-10 col-xl-8 order-1 order-lg-2" id="menu">
+				<div class="col-6 col-lg-10 col-xl-9 order-1 order-lg-2" id="menu">
 					<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 				</div>
-				<div class="col-2 text-lg-right my-auto d-none d-xl-block order-md-3" id="search">
+				<div class="col-2 col-xl-1 text-lg-right my-auto d-none d-xl-block order-md-3" id="search">
 
 					<ul class="icon">
 						<li> <a href="#searchBar" class="icon" data-toggle="search-form"><i class="searchIcon fa fa-search" aria-hidden="true"></i></a>

@@ -120,7 +120,7 @@
             font-weight: 300;
             margin: 0;
             @media screen and (max-width: 768px) {
-                font-size: 1.0625em !important;
+                font-size: 1.25em !important;
             }
         }
     }
@@ -138,6 +138,7 @@
             width: 89% !important;
             @media screen and (max-width: 768px) {
                 width: 100% !important;
+                line-height: 25px !important;
             }
         }
         @media screen and (max-width: 768px) {
