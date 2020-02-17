@@ -90,7 +90,7 @@ get_header(); ?>
 				<?php the_field('texte_de_gauche'); ?>
 			</div>
 			<div class="col-6 col-lg-2 text-left right">
-				<p><?php the_field('phrase_accroche_droite'); ?></p>
+				<p class="phrase_accroche_droite"><?php the_field('phrase_accroche_droite'); ?></p>
 			</div>
 			<div class="border_grey d-none d-lg-block"></div>
 		</div>

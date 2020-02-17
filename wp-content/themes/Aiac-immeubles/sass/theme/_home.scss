@@ -149,7 +149,7 @@
         .title {
             padding: 10% 0 !important;
             hr {
-                width: 25% !important;
+                width: 14% !important;
                 float: none !important;
                 margin-left: 0 !important;
             }
@@ -558,6 +558,9 @@
 }
 
 .actu {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding-top: 5%;
+    }
     .actualite {
         @media screen and (min-width: 1200px) and (max-width: 1600) {
             min-height: 370px !important;

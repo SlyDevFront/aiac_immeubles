@@ -149,7 +149,7 @@ h5 {
 }
 
 p {
-    &:not(.textgauche):not(.accroche_text):not(.link):not(.baseline):not(.textwidget):not(.copyright):not(#vousetes):not(.unite):not(.definition):not(.number) {
+    &:not(.textgauche):not(.phrase_accroche_droite):not(.accroche_text):not(.link):not(.baseline):not(.textwidget):not(.copyright):not(#vousetes):not(.unite):not(.definition):not(.number) {
         font-family: Niramit, sans-serif !important;
         font-size: 1.0625em !important;
         font-weight: 300 !important;
