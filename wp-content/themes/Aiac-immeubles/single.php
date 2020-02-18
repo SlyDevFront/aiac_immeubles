@@ -39,7 +39,7 @@ $container = get_theme_mod('understrap_container_type');
 					yoast_breadcrumb('<p class="unite" id="breadcrumbs">', '</p>');
 				}
 				?>
-				<div class="row justify-content-center">
+				<div class="row no-gutters justify-content-center">
 					<div class="container text-center ">
 						<?php the_field('video_header'); ?>
 

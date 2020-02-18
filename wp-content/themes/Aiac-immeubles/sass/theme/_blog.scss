@@ -1,6 +1,24 @@
+.single-post {
+    @media screen and (max-width: 992px) {
+        h1 {
+            font-size: 2.5em !important;
+        }
+    }
+}
+
 .blog {
     height: 440px;
     background-attachment: fixed !important;
+    @media screen and (max-width: 992px) {
+        #breadcrumbs {
+            line-height: 25px !important;
+            padding-top: 3%;
+        }
+        background-attachment: initial !important;
+    }
+    @media screen and (max-width: 767px) {
+        height: 300px;
+    }
     .header-overlay {
         height: 100%;
     }
@@ -10,14 +28,27 @@
     .header-overlay {
         background: none !important;
         #breadcrumbs {
-            @media screen and (min-width: 992px) {
-                position: absolute !important;
+            @media screen and (max-width: 992px) {
+                line-height: 25px !important;
+                margin: 2% !important;
             }
         }
         iframe {
             @media screen and (max-width: 767px) {
                 width: 100% !important;
-                height: auto !important;
+                height: 250px;
+            }
+            @media screen and (max-width: 768px) {
+                width: 100% !important;
+                margin-top: -5%;
+                margin-bottom: -3%;
+                //height: auto !important;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .container {
+                margin: 0 !important;
+                padding: 0 !important;
             }
         }
     }
@@ -34,11 +65,12 @@
         }
         h2 {
             line-height: 40px !important;
+            font-size: 2.2em !important;
         }
     }
     h2 {
         color: $primary_blue !important;
-        font-size: 2.4em !important;
+        font-size: 2.4em;
         font-weight: 500;
         margin-bottom: 50px !important;
         line-height: 25px;
@@ -124,22 +156,28 @@
     }
     ul:not(.share_rs) {
         margin-top: 2em !important;
-        list-style: none;
-        padding: 0;
+        margin-bottom: 0;
+        list-style-image: url('../img/puce-svg.svg');
+        list-style-position: inside;
+        padding-left: 1em;
         li {
             color: #3b4954 !important;
             font-size: 1.041875em !important;
             line-height: initial;
+            text-indent: -1em;
             &::before {
-                content: url('../img/aiac-courtage-5c-liste-after.svg');
-                vertical-align: sub;
-                margin-right: 1em;
+                // content: url('../img/puce-svg.svg');
+                // vertical-align: sub;
+                // margin-right: 1em;
             }
         }
     }
     .social_row {
         padding-top: 4%;
         position: relative;
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            padding-bottom: 5%;
+        }
     }
     main {
         margin-top: 10px;
@@ -152,21 +190,39 @@
                 margin-bottom: 10% !important;
             }
         }
+        .nav_container {
+            max-width: 200px;
+            display: inline-flex;
+        }
         #left {
             background-color: rgb(232, 232, 232);
             padding: 5%;
             border-right: 20px solid rgb(4, 145, 208);
             transition: .3s;
-            img {
-                float: left;
+            .initial {
                 transform: rotate(180deg);
-                margin-top: 1.2em;
+                position: absolute;
+                left: 5%;
+                top: 48%;
+            }
+            .hover {
+                transform: rotate(0) !important;
+                position: absolute;
+                left: 5%;
+                display: none;
+                top: 48%;
             }
             &:hover {
                 background-color: $primary_blue;
                 p,
                 a {
                     color: #ffffff !important;
+                }
+                .initial {
+                    display: none;
+                }
+                .hover {
+                    display: block;
                 }
             }
         }
@@ -175,14 +231,29 @@
             padding: 5%;
             border-left: 20px solid rgb(4, 145, 208);
             transition: .3s;
-            img {
-                float: right;
+            .initial {
+                position: absolute;
+                right: 5%;
+                top: 48%;
+            }
+            .hover {
+                transform: rotate(180deg);
+                position: absolute;
+                right: 5%;
+                top: 48%;
+                display: none;
             }
             &:hover {
                 background-color: $primary_blue;
                 p,
                 a {
                     color: #ffffff !important;
+                }
+                .initial {
+                    display: none;
+                }
+                .hover {
+                    display: block;
                 }
             }
         }

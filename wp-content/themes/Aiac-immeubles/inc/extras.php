@@ -110,10 +110,14 @@ if (!function_exists('understrap_post_nav')) {
 					<a href="<?php echo $prevlink; ?>">
 						<div class="col-12 col-md-6 link_single text-right" id="firstmobile">
 							<div class="content_single" id="left" data-aos="fade-right" data-aos-duration="2500">
-								<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/arrow_who.svg" alt="">
+								<img class="initial" src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/arrow_who.svg" alt="">
+								<img class="hover" src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/arrow-who-hover.svg" alt="">
 
 								<p>précédent</p>
-								<?php previous_post_link('<span class="nav-previous">%link</span>'); ?>
+								<div class="nav_container">
+									<?php previous_post_link('<span class="nav-previous">%link</span>'); ?>
+
+								</div>
 
 							</div>
 						</div>
@@ -125,9 +129,12 @@ if (!function_exists('understrap_post_nav')) {
 						<div class="col-12 col-md-6 link_single text-left">
 							<div class="content_single" id="right" data-aos="fade-left" data-aos-duration="2500">
 								<p>suivant</p>
-								<?php next_post_link('<span class="nav-next">%link</span>');
-								?>
-								<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/arrow_who.svg" alt="">
+								<div class="nav_container">
+									<?php next_post_link('<span class="nav-next">%link</span>');
+									?>
+								</div>
+								<img class="initial" src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/arrow_who.svg" alt="">
+								<img class="hover" src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/arrow-who-hover.svg" alt="">
 
 							</div>
 						</div>

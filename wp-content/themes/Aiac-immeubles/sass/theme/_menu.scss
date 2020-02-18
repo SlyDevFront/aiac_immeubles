@@ -7,7 +7,7 @@
     }
     @media screen and (min-width: 1024px) and (max-width: 1024px) {
         a.mega-menu-link {
-            padding: 0 20px !important;
+            //padding: 0 20px !important;
             font-size: 1em !important;
         }
         ul.mega-sub-menu {
@@ -27,6 +27,9 @@
         }
     }
     @media screen and (min-width:1024px) {
+        .mega-acces_client {
+            margin-left: 2.2% !important;
+        }
         #mega-menu-28-0-1 {
             height: 355px !important;
             .mega-sub-menu {

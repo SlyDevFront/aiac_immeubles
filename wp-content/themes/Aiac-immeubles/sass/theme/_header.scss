@@ -16,7 +16,7 @@ body {
     .baseline {
         color: #545454;
         letter-spacing: 1px;
-        font-size: 0.825em !important;
+        font-size: 0.9m !important;
     }
     .link {
         color: #00457c;
@@ -24,6 +24,7 @@ body {
         color: #00457c;
         a {
             color: #00457c;
+            font-size: .9em !important;
             &::after {
                 font-family: "FontAwesome";
                 content: $fa-var-arrow-circle-right;
@@ -200,16 +201,31 @@ body {
     }
 }
 
+.video {
+    #breadcrumbs {
+        @media screen and (min-width: 768px) {
+            margin-left: 1.5em !important;
+        }
+        @media screen and (min-width: 768px) {
+            line-height: 25px !important;
+        }
+    }
+    .mx-15 {
+        @media screen and (max-width: 767px) {
+            width: 100% !important;
+        }
+    }
+}
+
 #breadcrumbs {
     margin-bottom: 0 !important;
     a {
         color: #ffffff !important;
     }
-    * {
-        color: rgb(255, 255, 255) !important;
-        letter-spacing: 4px;
-        line-height: 60px !important;
-        margin: 0;
-        font-size: 0.91125em !important;
-    }
+    color: rgb(255, 255, 255) !important;
+    letter-spacing: 4px;
+    line-height: 60px;
+    margin: 0;
+    font-size: 0.91125em !important;
+    font-weight: 300;
 }
