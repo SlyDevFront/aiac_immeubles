@@ -16,7 +16,7 @@ body {
     .baseline {
         color: #545454;
         letter-spacing: 1px;
-        font-size: 0.9m !important;
+        font-size: 0.9em !important;
     }
     .link {
         color: #00457c;
@@ -24,7 +24,7 @@ body {
         color: #00457c;
         a {
             color: #00457c;
-            font-size: .9em !important;
+            font-size: 0.9em !important;
             &::after {
                 font-family: "FontAwesome";
                 content: $fa-var-arrow-circle-right;
@@ -149,7 +149,7 @@ body {
         box-sizing: border-box;
         display: inline;
         margin-right: 2%;
-        transition: .3s;
+        transition: 0.3s;
         &:hover {
             a {
                 color: #ffffff;
@@ -161,7 +161,7 @@ body {
             border-radius: 50%;
             margin-right: 2%;
             border: 1px solid #363737;
-            transition: .3s;
+            transition: 0.3s;
             &:hover {
                 background: none;
                 color: #ffffff;
