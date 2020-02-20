@@ -80,9 +80,18 @@ button {
     }
 }
 
+.wrapper {
+    @media screen and (max-width: 768px) {
+        overflow: hidden;
+    }
+}
+
 section {
     position: relative;
     overflow-x: hidden !important;
+    @media screen and (max-width: 768px) {
+        overflow: hidden;
+    }
     .border_dark_grey {
         position: absolute;
         top: 0;
