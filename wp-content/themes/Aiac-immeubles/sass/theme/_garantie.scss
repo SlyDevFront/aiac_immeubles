@@ -1,0 +1,304 @@
+.page-template-garantie-name {
+    @media screen and (max-width: 768px) {
+        #breadcrumbs {
+            line-height: 25px !important;
+        }
+        .header_title_container {
+            h5 {
+                text-align: center;
+                margin-bottom: -4em !important;
+            }
+        }
+        h2 {
+            font-size: 2.7em;
+        }
+        h3 {
+            font-size: 2em !important;
+        }
+        .detail-garanties {
+            padding: 3% 0 5% 0 !important;
+        }
+        .team_accroche {
+            .right {
+                padding: 2% 5% !important;
+            }
+        }
+        .team-accroche-2 {
+            .right {
+                border: none !important;
+            }
+        }
+        #photo_center {
+            padding: 5% 0;
+        }
+        ul.child_pages {
+            li {
+                padding: 2% 0 !important;
+            }
+        }
+        section:not(.header-page) {
+            padding: 5% 0 !important;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        h2 {
+            line-height: 40px !important;
+            font-size: 2.2em !important;
+        }
+        h3 {
+            font-size: 1.7em !important;
+            line-height: 35px !important;
+        }
+        h5 {
+            font-size: 1.041875em !important;
+        }
+        .detail-garanties {
+            .accroche-item {
+                margin: 1em !important;
+            }
+        }
+        .garantie_name {
+            button {
+                margin: 5% 0 !important;
+            }
+        }
+        .title {
+            ul {
+                padding-left: 0;
+                margin-bottom: 2em !important;
+            }
+        }
+        ul.child_pages {
+            li {
+                padding: 5% 0 !important;
+            }
+        }
+        .qui_sommes_nous-2 {
+            img {
+                padding-bottom: 10%;
+            }
+        }
+        .team-accroche-pagelinked {
+            .right {
+                border: none !important;
+            }
+            .left {
+                .accroche_gauche {
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+    button {
+        background-color: rgb(4, 145, 208);
+        border: none !important;
+        border-radius: 35px;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        -moz-transition: .3s;
+        transition: .3s;
+        &:hover {
+            filter: brightness(1.2);
+        }
+        a {
+            text-transform: uppercase;
+            color: #ffffff !important;
+            text-decoration: none !important;
+        }
+    }
+    .header_title_container {
+        padding: 10% 0 !important;
+        h1 {
+            padding: 0;
+        }
+        h5 {
+            color: #fff;
+            line-height: 45px;
+            text-transform: none;
+            margin: 0;
+        }
+    }
+    h2 {
+        color: $primary_blue;
+        margin-bottom: 0.5em !important;
+    }
+    h3 {
+        font-size: 2.25em;
+        font-weight: 200 !important;
+        color: rgb(61, 76, 87) !important;
+        margin-bottom: 0.5em !important;
+        line-height: 50px;
+    }
+    h5 {
+        letter-spacing: 5px !important;
+    }
+    h6 {
+        text-transform: uppercase;
+    }
+    .title {
+        hr {
+            width: 6%;
+            border-top: 5px solid rgb(61, 76, 87);
+            margin: 0 auto;
+            float: none;
+        }
+    }
+    section:not(.header-page):not(#footer_menu):not(.footer) {
+        padding: 3% 0;
+        overflow: hidden;
+        ul:not(.child_pages) {
+            margin-top: 2em !important;
+            margin-bottom: 0;
+            list-style: none;
+            list-style-position: inside;
+            li {
+                position: relative;
+                color: #3b4954 !important;
+                font-size: 1.041875em !important;
+                line-height: initial;
+                padding-left: 1.8em;
+                &::before {
+                    content: url('../img/puce-svg.svg');
+                    vertical-align: sub;
+                    margin-right: 1em;
+                    left: 0;
+                    width: 1.2em;
+                    position: absolute;
+                    top: .3em;
+                }
+            }
+        }
+        ul.child_pages {
+            list-style: none;
+            li {
+                // display: inline-block;
+                // margin: 0 0.8em !important;
+                margin: 5% 0;
+                a {
+                    color: #000000;
+                    transition: all .2s;
+                    font-size: 1.04em;
+                    line-height: 26px;
+                    font-weight: 300;
+                    span {
+                        display: inline-block;
+                        width: 45%;
+                        vertical-align: middle;
+                    }
+                    img {
+                        transition: all .2s;
+                        filter: brightness(0);
+                        margin-right: 0.5em;
+                    }
+                    &:hover {
+                        color: $primary_blue;
+                        img {
+                            filter: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .detail-garanties {
+        .accroche-item {
+            margin: 3em 0;
+        }
+    }
+    .qui_sommes_nous {
+        p {
+            margin: 1rem 0 !important;
+        }
+    }
+    .qui_sommes_nous-2 {
+        background: none !important;
+        h3 {
+            &:not(:first-child) {
+                margin-top: 1em;
+            }
+        }
+        .title {
+            margin-bottom: 4em;
+        }
+    }
+    .team-accroche-2 {
+        .left {
+            border: none !important;
+            padding: 3% 0 !important;
+        }
+        h5 {
+            margin: 0;
+            line-height: 36px;
+        }
+    }
+    .team-accroche-pagelinked {
+        background: none !important;
+    }
+    .anchors_box {
+        position: fixed;
+        right: 0;
+        top: 30vh;
+        z-index: 99999;
+        ul {
+            list-style: none !important;
+            padding: 0 !important;
+            margin-bottom: 0 !important;
+            text-align: center;
+            [id^="hover_cheat"] {
+                //padding: 1em;
+                //width: 5em;
+                height: 80px;
+                //border-bottom: 1px solid #000;
+                line-height: 5em;
+                //background: $second_dark_grey;
+                transition: all .2s;
+                &:hover {
+                    .img_container {
+                        background-color: $primary_blue;
+                    }
+                    background: $primary_blue;
+                    width: 20em;
+                    padding-left: 1em;
+                    .text_container {
+                        display: block;
+                    }
+                    &not(:last-child) {
+                        //border-bottom: 1px solid #fff;
+                    }
+                }
+                //text-align: center;
+                a {
+                    .li_container {
+                        position: relative;
+                    }
+                    .text_container {
+                        float: left;
+                        display: none;
+                        text-align: initial;
+                    }
+                    .img_container {
+                        position: absolute;
+                        right: 0;
+                        width: 5em;
+                        background: $second_dark_grey;
+                        transition: all .2s;
+                        &:hover {
+                            background: $primary_blue;
+                        }
+                    }
+                    span {
+                        display: inline-block;
+                        width: 10em;
+                        //text-align: left !important;
+                    }
+                    img {}
+                    color: #fff !important;
+                    transition: all .2s;
+                    &:hover {
+                        background: $primary_blue;
+                    }
+                }
+            }
+        }
+    }
+}

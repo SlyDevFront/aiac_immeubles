@@ -17,9 +17,14 @@
 @import "theme/_qui-sommes-nous";
 @import "theme/_blog";
 @import "theme/_team";
+@import "theme/_garantie";
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
