@@ -89,6 +89,13 @@
             }
         }
     }
+    .team_accroche {
+        .right {
+            .accroche_text {
+                width: 100% !important;
+            }
+        }
+    }
     button {
         background-color: rgb(4, 145, 208);
         border: none !important;
@@ -226,6 +233,11 @@
             border: none !important;
             padding: 3% 0 !important;
         }
+        .right {
+            p {
+                letter-spacing: 1px !important;
+            }
+        }
         h5 {
             margin: 0;
             line-height: 36px;
@@ -244,19 +256,25 @@
             padding: 0 !important;
             margin-bottom: 0 !important;
             text-align: center;
+            #hover_cheat4 {
+                &:hover {
+                    background-color: $primary_blue;
+                }
+                .img_container {
+                    background-color: $primary_blue;
+                }
+            }
             [id^="hover_cheat"] {
                 //padding: 1em;
                 //width: 5em;
-                height: 80px;
+                height: 81px;
                 //border-bottom: 1px solid #000;
                 line-height: 5em;
                 //background: $second_dark_grey;
                 transition: all .2s;
+                margin-bottom: 1px !important;
                 &:hover {
-                    .img_container {
-                        background-color: $primary_blue;
-                    }
-                    background: $primary_blue;
+                    background-color: $second_dark_grey;
                     width: 20em;
                     padding-left: 1em;
                     .text_container {
@@ -278,13 +296,11 @@
                     }
                     .img_container {
                         position: absolute;
+                        height: 81px;
                         right: 0;
                         width: 5em;
                         background: $second_dark_grey;
                         transition: all .2s;
-                        &:hover {
-                            background: $primary_blue;
-                        }
                     }
                     span {
                         display: inline-block;
