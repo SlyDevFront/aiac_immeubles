@@ -38,6 +38,14 @@ strong {
     font-weight: bold !important;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    width: 100%;
+    box-shadow: 0 -1rem 4rem $primary_dark_grey;
+}
+
 @media screen and (max-width: 767px) {
     .header-page {
         padding-top: 105px;
