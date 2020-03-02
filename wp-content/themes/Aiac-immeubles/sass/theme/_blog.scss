@@ -101,6 +101,8 @@
         transition: .3s;
         &:hover {
             filter: brightness(1.2);
+            transform: none !important;
+            box-shadow: none !important;
         }
         a {
             text-transform: uppercase;
@@ -195,12 +197,18 @@
             }
         }
         .nav_container {
-            max-width: 200px;
             display: inline-flex;
+            @media screen and (max-width: 1599px) {
+                max-width: 200px;
+                font-size: .9em;
+            }
+            @media screen and (min-width: 1600px) {
+                max-width: 350px;
+            }
         }
         .content_single {
             @media screen and (min-width: 768px) {
-                height: 110px;
+                height: 120px;
             }
         }
         #left {
