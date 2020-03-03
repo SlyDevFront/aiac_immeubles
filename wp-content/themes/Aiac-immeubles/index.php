@@ -47,7 +47,7 @@ get_header();
 			if ($loop_actu->have_posts()) {
 				while ($loop_actu->have_posts()) {
 					$loop_actu->the_post(); ?>
-					<div class="card " data-aos="fade-up" data-aos-duration="500">
+					<div class="card " data-aos="fade-up" data-aos-duration="1000">
 						<a href="<?php the_permalink(); ?>">
 							<div class="content_actualite">
 
