@@ -110,10 +110,11 @@ get_header(); ?>
 				<div class="row justify-content-center justify-content-lg-start">
 					<?php
 					$args = array(
-						'post_type' => 'garanties',
-						'posts_per_page' => 5,
-						'orderby' => 'date',
-						'order' => 'ASC'
+						'post_type'      => 'page',
+						'posts_per_page' => -1,
+						'post_parent'    => 348,
+						'post__not_in' => array($post->ID),
+						'order'          => 'ASC'
 					);
 					$loop_garantie = new WP_Query($args);
 					if ($loop_garantie->have_posts()) {

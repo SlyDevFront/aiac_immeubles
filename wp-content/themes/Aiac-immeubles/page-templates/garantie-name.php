@@ -56,7 +56,7 @@ $container = get_theme_mod('understrap_container_type');
 		</ul>
 	</div>
 </section>
-<section class="qui_sommes_nous container-fluid">
+<section id="section-1" class="qui_sommes_nous container-fluid">
 	<div class="mx-15">
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-12 col-lg-6 my-auto my-xl-0 order-2 order-lg-1 col-lg-4 text-center " data-aos="fade-left" data-aos-duration="1500" id="photo_center">
@@ -73,7 +73,7 @@ $container = get_theme_mod('understrap_container_type');
 		</div>
 	</div>
 </section>
-<section id="section-1" class="detail-garanties container-fluid">
+<section id="section-2" class="detail-garanties container-fluid">
 	<div class="mx-15">
 		<div class="row">
 			<div class="col-12 title text-center" data-aos="fade-up" data-aos-duration="500">
@@ -101,7 +101,7 @@ $container = get_theme_mod('understrap_container_type');
 		</div>
 	</div>
 </section>
-<section id="section-2" class="team_accroche container-fluid" data-aos="fade-up" data-aos-duration="2000">
+<section class="team_accroche container-fluid" data-aos="fade-up" data-aos-duration="2000">
 	<div class="mx-15">
 		<div class="row my-auto justify-content-center ">
 			<div class="col-12 col-lg-10">
