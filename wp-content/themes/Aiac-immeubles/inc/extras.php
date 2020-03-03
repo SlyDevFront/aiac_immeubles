@@ -147,7 +147,7 @@ if (!function_exists('understrap_post_nav')) {
 				?>
 				</a><!-- .nav-links -->
 		</nav><!-- .navigation -->
-<?php
+	<?php
 	}
 }
 
@@ -193,3 +193,31 @@ if (!function_exists('understrap_default_body_attributes')) {
 }
 add_filter('understrap_body_attributes', 'understrap_default_body_attributes');
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+add_action('wp_footer', 'tarteaucitron_services', PHP_INT_MAX);
+function tarteaucitron_services()
+{
+	?><script>
+		var tarteaucitronForceLanguage = 'fr'; /* supported: fr, en, de, es, it, pt, pl, ru */
+		tarteaucitron.init({
+			"hashtag": "#tarteaucitron",
+			/* Automatically open the panel with the hashtag */
+			"highPrivacy": false,
+			/* disabling the auto consent feature on navigation? */
+			"orientation": "top",
+			/* the big banner should be on 'top' or 'bottom'? */
+			"adblocker": false,
+			/* Display a message if an adblocker is detected */
+			"showAlertSmall": false,
+			/* show the small banner on bottom right? */
+			"cookieslist": true,
+			/* Display the list of cookies installed ? */
+			"removeCredit": false /* remove the credit link? */
+		});
+
+		tarteaucitron.user.analyticsUa = 'UA-XXXXXXXX-X';
+		tarteaucitron.user.analyticsMore = function() {
+			ga('set', 'anonymizeIp', true);
+		};
+		(tarteaucitron.job = tarteaucitron.job || []).push('analytics');
+	</script><?php
+			}
