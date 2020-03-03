@@ -40,6 +40,7 @@ body {
 .header {
     // height: 115px;
     background-color: #3e444e;
+    position: relative;
     .visible {
         visibility: visible !important;
     }
@@ -102,7 +103,7 @@ body {
     display: none;
     position: absolute;
     right: 7%;
-    top: 10em;
+    top: 7.5em;
     z-index: 9999999;
     width: 20vw;
     background: rgb(62, 68, 78);

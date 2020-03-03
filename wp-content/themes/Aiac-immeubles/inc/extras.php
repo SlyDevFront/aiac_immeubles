@@ -192,3 +192,4 @@ if (!function_exists('understrap_default_body_attributes')) {
 	}
 }
 add_filter('understrap_body_attributes', 'understrap_default_body_attributes');
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');

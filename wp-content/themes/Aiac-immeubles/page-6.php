@@ -233,7 +233,7 @@ include 'inc/slider.php';
 			?>
 		</div>
 		<div class="row justify-content-center">
-			<button><a href="/actualites">Plus d'actualités</a></button>
+			<button><a href="<?php the_permalink(25); ?>">Plus d'actualités</a></button>
 		</div>
 	</div>
 </section>

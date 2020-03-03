@@ -2,13 +2,13 @@
     @media screen and (min-width: 769px) and (max-width: 1440px) {
         .icon {
             li {
-                padding: 10px 17px !important;
+                padding: 0 !important;
             }
         }
     }
     @media screen and (max-width: 768px) {
         .copyright {
-            font-size: 0.6em !important;
+            //font-size: 0.6em !important;
             text-align: center !important;
         }
         .icon {
@@ -52,6 +52,13 @@
                 }
                 a {
                     color: #5c5c5c;
+                    @media screen and (min-width: 1024px) and (max-width: 1024px) {
+                        vertical-align: unset !important;
+                        padding: 6px 10px !important;
+                        i {
+                            vertical-align: unset !important;
+                        }
+                    }
                 }
             }
         }

@@ -1,8 +1,10 @@
 .page-template-garantie-name {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
         #breadcrumbs {
             line-height: 25px !important;
         }
+    }
+    @media screen and (max-width: 768px) {
         .header_title_container {
             h5 {
                 text-align: center;
@@ -36,7 +38,7 @@
                 padding: 2% 0 !important;
             }
         }
-        section:not(.header-page) {
+        section:not(.header-page):not(.footer):not(#footer_menu) {
             padding: 5% 0 !important;
         }
     }
@@ -91,8 +93,26 @@
     }
     .team_accroche {
         .right {
+            @media screen and (min-width: 1024px) and (max-width: 1024px) {
+                padding: 2% 2% 2% 5% !important;
+            }
+        }
+    }
+    .team_accroche {
+        .right {
             .accroche_text {
                 width: 100% !important;
+            }
+        }
+        .left {
+            .accroche_gauche {
+                font-size: 1.3125em !important;
+                line-height: 30px !important;
+                font-weight: 300 !important;
+                margin: 0 !important;
+                letter-spacing: 1px !important;
+                width: 80% !important;
+                color: rgb(58, 73, 83);
             }
         }
     }
@@ -135,9 +155,12 @@
         color: rgb(61, 76, 87) !important;
         margin-bottom: 0.5em !important;
         line-height: 50px;
-    }
-    h5 {
-        letter-spacing: 5px !important;
+        @media screen and (max-width: 1024px) {
+            line-height: 38px !important;
+        }
+        @media screen and (min-width:1024px) and (max-width: 1024px) {
+            height: 3.5em;
+        }
     }
     h6 {
         text-transform: uppercase;
@@ -162,7 +185,7 @@
                 position: relative;
                 color: #3b4954 !important;
                 font-size: 1.041875em !important;
-                line-height: initial;
+                line-height: 26px !important;
                 padding-left: 1.8em;
                 &::before {
                     content: url('../img/puce-svg.svg');
@@ -177,6 +200,10 @@
         }
         ul.child_pages {
             list-style: none;
+            margin-bottom: 0 !important;
+            @media screen and (min-width: 1024px) and (max-width: 1024px) {
+                padding: 0 !important;
+            }
             li {
                 // display: inline-block;
                 // margin: 0 0.8em !important;
@@ -191,11 +218,19 @@
                         display: inline-block;
                         width: 45%;
                         vertical-align: middle;
+                        @media screen and (max-width: 768px) {
+                            line-height: 20px;
+                        }
+                        @media screen and (min-width: 1024px) and (max-width: 1024px) {
+                            vertical-align: top;
+                            line-height: 1.2em;
+                        }
                     }
                     img {
                         transition: all .2s;
                         filter: brightness(0);
                         margin-right: 0.5em;
+                        vertical-align: middle;
                     }
                     &:hover {
                         color: $primary_blue;
@@ -236,6 +271,7 @@
         .right {
             p {
                 letter-spacing: 1px !important;
+                font-size: 1.35em !important;
             }
         }
         h5 {

@@ -39,7 +39,7 @@ strong {
 }
 
 .sticky {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     z-index: 999999;
     width: 100%;
@@ -84,14 +84,14 @@ button {
         vertical-align: middle;
         line-height: 30px;
     }
-    &:hover {
-        transform: translateY(-0.2rem);
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    }
-    &:active {
-        transform: translateX(-1px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    }
+    // &:hover {
+    //     transform: translateY(-0.2rem);
+    //     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    // }
+    // &:active {
+    //     transform: translateX(-1px);
+    //     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    // }
 }
 
 .wrapper {
@@ -197,7 +197,7 @@ h5 {
 }
 
 p {
-    &:not(.textgauche):not(.phrase_accroche_droite):not(.accroche_text):not(.link):not(.baseline):not(.textwidget):not(.copyright):not(#vousetes):not(.unite):not(.definition):not(.number) {
+    &:not(.textgauche):not(.date):not(.phrase_accroche_droite):not(.accroche_text):not(.link):not(.baseline):not(.textwidget):not(.copyright):not(#vousetes):not(.unite):not(.definition):not(.number) {
         font-family: Niramit, sans-serif !important;
         font-size: 1.0625em !important;
         font-weight: 300 !important;

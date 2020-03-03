@@ -75,7 +75,6 @@ $container = get_theme_mod('understrap_container_type');
 		AOS.init();
 		jQuery(window).scroll(function() {
 			var scroll = jQuery(window).scrollTop();
-			console.log(scroll);
 
 			if (scroll >= 45) {
 				jQuery(".header").addClass("sticky");

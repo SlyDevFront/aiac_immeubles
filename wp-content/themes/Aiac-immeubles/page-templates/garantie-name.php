@@ -155,9 +155,9 @@ $container = get_theme_mod('understrap_container_type');
 <section class="team_accroche team-accroche-pagelinked container-fluid" data-aos="fade-up" data-aos-duration="500">
 	<div class="mx-15">
 		<div class="row my-auto justify-content-center ">
-			<div class="col-12 col-lg-10">
+			<div class="col-12 col-xl-10">
 				<div class="row my-auto justify-content-center">
-					<div class="col-12 col-sm-4 col-xl-2 my-auto text-right left" data-aos="fade-right" data-aos-duration="750">
+					<div class="col-12 col-sm-4 col-lg-2 my-auto text-right left" data-aos="fade-right" data-aos-duration="750">
 						<h6 class="accroche_gauche">Garantir vos immeubles</h6>
 					</div>
 					<div class="col-12 col-sm-8 col-xl-10 my-auto text-left right" data-aos="fade-up" data-aos-duration="500">
@@ -166,13 +166,14 @@ $container = get_theme_mod('understrap_container_type');
 							'post_type'      => 'page',
 							'posts_per_page' => -1,
 							'post_parent'    => 348,
+							'post__not_in' => array($post->ID),
 							'order'          => 'ASC'
 						);
 						$get_child_pages = new WP_Query($child_pages);
 						if ($get_child_pages->have_posts()) :  ?>
 							<ul class="child_pages row">
 								<?php while ($get_child_pages->have_posts()) : $get_child_pages->the_post(); ?>
-									<li class="col-12 col-md-6 col-lg-3 my-auto">
+									<li class="col-12 col-md-6 col-lg-4 col-xl-3 my-auto">
 										<a href="<?php the_permalink(); ?>">
 											<img src="<?php the_field('icone_page'); ?>" alt="">
 											<span><?php the_title(); ?></span>
