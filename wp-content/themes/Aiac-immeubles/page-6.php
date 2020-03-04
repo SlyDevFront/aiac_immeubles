@@ -63,8 +63,7 @@ include 'inc/slider.php';
 						'post_type'      => 'page',
 						'posts_per_page' => -1,
 						'post_parent'    => 348,
-						'post__not_in' => array($post->ID),
-						'order'          => 'ASC'
+						'order'          => 'DESC'
 					);
 					$loop_garantie = new WP_Query($args);
 					if ($loop_garantie->have_posts()) {

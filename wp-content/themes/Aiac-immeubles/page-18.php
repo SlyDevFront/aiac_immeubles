@@ -47,7 +47,7 @@ get_header(); ?>
 						while ($loop_experts->have_posts()) {
 							$loop_experts->the_post(); ?>
 							<div class="col-12 col-md-4 col-lg-4 expert">
-								<?php echo the_post_thumbnail('medium'); ?>
+								<?php echo the_post_thumbnail('large'); ?>
 								<div class="expert_data">
 									<h6 class="text-center text-md-left" data-aos="fade-up" data-aos-duration="1500"><?php the_title(); ?></h6>
 									<p class="text-center text-md-left" data-aos="fade-up" data-aos-duration="1500"><?php the_field('poste_occupe'); ?></p>

@@ -99,6 +99,16 @@ body {
     }
 }
 
+#search-wrapper {
+    #searchformDesk {
+        input {
+            border-radius: 0 !important;
+            background: none;
+            border: 1px solid $second_dark_grey !important;
+        }
+    }
+}
+
 #searchformdesktop {
     display: none;
     position: absolute;

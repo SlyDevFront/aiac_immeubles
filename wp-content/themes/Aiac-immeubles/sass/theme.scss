@@ -26,6 +26,9 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-stop: normal;
+    scroll-padding-top: 105px;
+    scroll-snap-type: y mandatory;
 }
 
 a {

@@ -41,7 +41,7 @@ get_header();
 				'post_type' => 'post',
 				'posts_per_page' => -1,
 				'orderby' => 'date',
-				'order' => 'ASC'
+				'order' => 'DESC'
 			);
 			$loop_actu = new WP_Query($args);
 			if ($loop_actu->have_posts()) {
