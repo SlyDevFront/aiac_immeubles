@@ -31,6 +31,16 @@ html {
     scroll-snap-type: y mandatory;
 }
 
+.site-footer {
+    .my-auto {
+        //height: auto !important;
+    }
+}
+
+.my-auto {
+    height: 100%;
+}
+
 a {
     &:hover {
         text-decoration: none !important;
@@ -212,6 +222,9 @@ p {
 
 p.copyright {
     color: #ffffff !important;
+    line-height: 26px !important;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 

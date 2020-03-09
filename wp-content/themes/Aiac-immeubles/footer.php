@@ -24,7 +24,7 @@ $container = get_theme_mod('understrap_container_type');
 					<div class="row ">
 						<div class="col-12 order-3 order-md-1 col-md-3 my-auto">
 							<p class="copyright">
-								© aiac immeuble par aiac courtage
+								© aiac Immeuble par aiac Courtage
 							</p>
 						</div>
 						<div class="col-6 order-1 order-md-2 col-md-6 my-auto text-md-center">
@@ -32,8 +32,8 @@ $container = get_theme_mod('understrap_container_type');
 						</div>
 						<div class="col-6 order-2 order-md-3 col-md-3 my-auto text-right icons">
 							<ul class="icon">
-								<li><a href="#"><i class="fas fa-envelope"></i></a></li>
-								<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="<?php the_permalink(16); ?>"><i class="fas fa-envelope"></i></a></li>
+								<li><a href="https://www.linkedin.com/company/aiac" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -53,7 +53,7 @@ $container = get_theme_mod('understrap_container_type');
 				<div class="col-12 col-md-12 my-auto text-center justify-content-center">
 					<ul>
 						<li><a href="#">Mentions légales</a></li>
-						<li><a href="#">Politique de confidentialité</a></li>
+						<li><a href="<?php the_permalink(3); ?>">Politique de confidentialité</a></li>
 						<li><a href="https://www.eanet.fr" target="_blank">Création: EANET</a></li>
 					</ul>
 				</div>
@@ -72,6 +72,12 @@ $container = get_theme_mod('understrap_container_type');
 				// jQuery('.searchIcon ').removeClass('fa-close').addClass('fa-search');
 			}
 		});
+		var height = jQuery('#mega-menu-item-28 > .mega-sub-menu').height();
+		var height2 = jQuery('#mega-menu-item-27 > .mega-sub-menu').height();
+		var height3 = jQuery('#mega-menu-item-21 > .mega-sub-menu').height();
+		jQuery('#mega-menu-28-0-1').height(height);
+		jQuery('#mega-menu-27-0-1').height(height2);
+		jQuery('#mega-menu-21-0-1').height(height3);
 		AOS.init();
 		jQuery(window).scroll(function() {
 			var scroll = jQuery(window).scrollTop();

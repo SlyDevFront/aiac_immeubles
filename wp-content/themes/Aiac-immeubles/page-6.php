@@ -26,12 +26,12 @@ include 'inc/slider.php';
 			</div>
 			<div class="col-12 col-md-6 col-lg-3 text-center my-auto " id="admin">
 				<a href="<?php the_field('lien_administrateur_de_biens'); ?>"><img src="<?php get_template_directory(); ?>wp-content/themes/Aiac-immeubles/img/aiac-home-admin.svg" alt="aiac immeubles syndic bénévoles">
-					<h4>ADMINISTRATEUR DE BIENS</h4>
+					<h4><?php the_field('titre_du_lien_1'); ?></h4>
 				</a>
 			</div>
 			<div class="col-12 col-md-6 col-lg-3 text-center my-auto " id="syndic">
 				<a href="<?php the_field('lien_syndic_benevoles'); ?>"><img src="<?php get_template_directory(); ?>wp-content/themes/Aiac-immeubles/img/aiac-home-syndic.svg" alt="aiac immeubles syndic bénévoles">
-					<h4>COPROPRIÉTAIRE</h4>
+					<h4><?php the_field('titre_du_lien_2'); ?></h4>
 				</a>
 			</div>
 			<div class="col-12 col-md-12 col-lg-3 text-center text-lh-left my-auto" id="contact">
@@ -91,7 +91,7 @@ include 'inc/slider.php';
 	<div class="mx-15">
 		<div class="row justify-content-center">
 			<div class="col-12 title text-center" data-aos="fade-up" data-aos-duration="1500">
-				<h3>Syndics :&nbsp;<span><?php the_field('titre_h3_syndics'); ?></span></h3>
+				<h3>Syndic :&nbsp;<span><?php the_field('titre_h3_syndics'); ?></span></h3>
 				<h5><?php the_field('titre_h5_syndics'); ?></h5>
 				<hr>
 			</div>
